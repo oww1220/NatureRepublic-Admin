@@ -13,6 +13,7 @@ export{}
 declare global {
     interface Window{
         CommonUI: any;
+        $: JQueryStatic;
     }
     interface HTMLElement {
         iscrolls?: IScroll;

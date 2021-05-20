@@ -1,0 +1,125 @@
+input[type='password'],
+input[type='text'],
+input[type='number'],
+input[type='tel'] {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px 0 15px;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    &:disabled {
+        border-color: #f8f8f8 !important;
+        color: #666 !important;
+        background-color: #efefef !important;
+    }
+    &.ty2 {
+        background-color: #f8f8f8;
+        border-color: #ddd;
+    }
+    &.ty3 {
+        background-color: #f8f8f8;
+        border-color: transparent;
+    }
+    &.h30 {
+        height: 30px;
+        line-height: 30px;
+    }
+    &.h25 {
+        height: 25px;
+        line-height: 23px;
+        font-size: 13px;
+    }
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+    color: #666;
+}
+
+.input-T {
+    @include Inline-block-config;
+    width: 100%;
+    .input-in {
+        width: 100%;
+        position: relative;
+        label {
+            font-size: 14px;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+        }
+
+        &.left {
+            @include Flex-start-center($display: inline-flex);
+            label {
+                flex: none;
+                margin: 0 5px 0 0;
+            }
+        }
+    }
+
+    .guide-wrap {
+        > div {
+            line-height: 1.4;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+        .guide {
+            color: #afafaf;
+        }
+        .error {
+            color: red;
+        }
+        .complete {
+            color: blue;
+        }
+    }
+
+    .remove-value {
+        @include Position($top: 50%, $right: 5px);
+        @include Background($sprite: 'btn_attach_delete', $type: 'gif');
+        width: 15px;
+        height: 14px;
+        margin-top: -7px;
+    }
+}
+
+select {
+    border-radius: 3px;
+    @include Background($sprite: 'icon_select', $position: right 13px top 50%);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 35px 0 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #707070;
+    border: 1px solid #ddd;
+    &.h25 {
+        height: 26px;
+        line-height: 24px;
+        font-size: 13px;
+    }
+    &.h30 {
+        height: 30px;
+        line-height: 28px;
+    }
+    &.h50 {
+        height: 50px;
+        line-height: 48px;
+    }
+    &::-ms-expand {
+        display: none;
+    }
+    &:disabled {
+        background-color: #efefef;
+        color: #666;
+    }
+}
