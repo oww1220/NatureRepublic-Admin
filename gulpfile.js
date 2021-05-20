@@ -117,14 +117,6 @@ gulp.task('sass', ()=>
         }).on('error', sass.logError)
     )
     .pipe(cssnano())
-    .pipe(pxtorem({
-            propList: ['*', '!'], // (Array) Use wildcard * to enable all properties. Use ! to not match a property. 
-            rootValue: 16, // (Number | Function) Represents the root element font size
-            replace: false, //  (Boolean) Replaces rules containing rems instead of adding fallbacks.
-            minPixelValue: 2, // (Number) Set the minimum pixel value to replace.
-            mediaQuery: false // (Boolean) Allow px to be converted in media queries.
-        }
-    ))
     .pipe(
         autoprefixer({
             browsers: autoprefixBrowsers,

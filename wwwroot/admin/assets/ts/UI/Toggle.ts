@@ -5,6 +5,17 @@ import CommonUI from '../CommonUI';
 $(() => {
     const { Event } = CommonUI;
 
+    //real logic
+    Event.toggle('.lnb-toggle-bt', '.lnb-area', (logic, layer) => {
+        //console.log('toggle');
+        logic();
+    });
+    Event.toggle('.gnb-toggle-bt', null, (logic, layer) => {
+        console.log('toggle');
+        logic();
+    });
+
+    // test logic
     Event.toggle('.toggle_btn', '.toggle_cont', (logic, layer) => {
         console.log('toggle');
         logic();
