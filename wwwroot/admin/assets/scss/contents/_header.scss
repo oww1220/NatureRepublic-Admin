@@ -10,6 +10,8 @@
     @include Position($top: 60px, $left: 0, $bottom: 0);
     background: #282c37;
     width: 220px;
+    transition: transform 0.5s;
+    transform: translateX(0);
     .gnb-area {
         width: 100%;
         > li {
@@ -64,6 +66,15 @@
         color: #fff;
         &:before {
             content: '<<';
+        }
+    }
+
+    &.on {
+        transform: translateX(-100%);
+        .gnb-toggle-bt {
+            &:before {
+                content: '>>';
+            }
         }
     }
 }

@@ -11,8 +11,15 @@ $(() => {
         logic();
     });
     Event.toggle('.gnb-toggle-bt', null, (logic, layer) => {
-        console.log('toggle');
+        const $target = $('#wrap');
+        //console.log('toggle');
         logic();
+
+        if ($('.gnb-toggle-bt').hasClass('on')) {
+            $target.addClass('on');
+        } else {
+            $target.removeClass('on');
+        }
     });
 
     // test logic
