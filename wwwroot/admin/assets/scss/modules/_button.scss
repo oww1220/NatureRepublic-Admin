@@ -1,0 +1,25 @@
+.ico {
+}
+
+.bt {
+    @include Inline-block-config;
+    &.remove-value {
+        @include Background($sprite: 'btn_attach_delete', $type: 'gif');
+        @include Hide_txt;
+        width: 15px;
+        height: 14px;
+    }
+    &.type05 {
+        box-sizing: border-box;
+        border-radius: 3px;
+        border: 1px solid #c4cbd0;
+        font-size: 13px;
+        color: #666;
+        text-align: center;
+        background-color: #fff;
+        height: 30px;
+        line-height: 28px;
+        width: 68px;
+        min-width: 68px;
+    }
+}
