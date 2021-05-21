@@ -1,7 +1,82 @@
-#wrap {
-    transition: padding 0.5s;
-    padding-left: 250px;
-    &.on {
-        padding-left: 0;
+.list-type {
+    width: 100%;
+    @include Flex-start-start($wrap: wrap);
+    .list-in {
+        .input-C {
+            margin-right: 0;
+        }
+    }
+    &.col1 {
+        > li {
+            width: 100%;
+        }
+    }
+    &.col2 {
+        > li {
+            width: 50%;
+        }
+    }
+    &.col3 {
+        > li {
+            width: 33.333%;
+        }
+    }
+    &.col4 {
+        > li {
+            width: 25%;
+        }
+    }
+    &.col5 {
+        > li {
+            width: 20%;
+        }
+    }
+}
+
+-col1 {
+    @include Flex-start-start($wrap: wrap);
+    > li {
+        width: 100%;
+        .list-in {
+            height: 100%;
+            width: auto;
+            margin: 10px 0 0;
+        }
+    }
+}
+.list-type-col2 {
+    @include Flex-start-start($wrap: wrap);
+    width: 100%;
+    > li {
+        width: 50%;
+        .list-in {
+        }
+    }
+}
+.list-type-col3 {
+    @include Flex-start-start($wrap: wrap);
+    width: 100%;
+    > li {
+        width: 33.333%;
+        .list-in {
+        }
+    }
+}
+.list-type-col4 {
+    @include Flex-start-start($wrap: wrap);
+    width: 100%;
+    > li {
+        width: 25%;
+        .list-in {
+        }
+    }
+}
+.list-type-col5 {
+    @include Flex-start-start($wrap: wrap);
+    width: 100%;
+    > li {
+        width: 20%;
+        .list-in {
+        }
     }
 }

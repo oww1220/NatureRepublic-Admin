@@ -34,31 +34,31 @@
                 <h4>기본 인풋</h4>
                 <div class="input-T" style="width: 127px;">
                     <div class="input-in">
-                        <input type="text" id="txtStep1DateOff" placeholder="Placeholder"/>
+                        <input type="text" id="txtStep1DateOff1" placeholder="Placeholder"/>
                     </div>
                 </div>
                 <br/><br/>
                 <div class="input-T" style="width: 127px;">
                     <div class="input-in">
-                        <input class="h30" type="text" id="txtStep1DateOff" />
+                        <input class="h30" type="text" id="txtStep1DateOff2" />
                     </div>
                 </div>
                 <br/><br/>
                 <div class="input-T" style="width: 127px;">
                     <div class="input-in">
-                        <input class="h25" type="text" id="txtStep1DateOff" />
+                        <input class="h25" type="text" id="txtStep1DateOff3" />
                     </div>
                 </div>
                 <br/><br/>
                 <div class="input-T" style="width: 127px;">
                     <div class="input-in">
-                        <input type="text" id="txtStep1DateOff" disabled="disabled"/>
+                        <input type="text" id="txtStep1DateOff4" disabled="disabled"/>
                     </div>
                 </div>
                 <br/><br/>
                 <div class="input-T" style="width: 127px;">
                     <div class="input-in">
-                        <input type="text" id="txtStep1DateOff" placeholder="Placeholder" />
+                        <input type="text" id="txtStep1DateOff5" placeholder="Placeholder" />
                         <button type="button" class="remove-value" onclick="$(this).parent().find('input').val('')"></button>
                     </div>
                 </div>
@@ -66,22 +66,22 @@
                 <h4>라벨이 있는 경우</h4>
                 <div class="input-T">
                     <div class="input-in">
-                        <label for="txtMaktx">모델명</label>
-                        <input id="txtMaktx" type="text" />
+                        <label for="txtMaktx1">모델명</label>
+                        <input id="txtMaktx1" type="text" />
                     </div>
                 </div>
                 <br/><br/>
                 <div class="input-T">
                     <div class="input-in left">
-                        <label for="txtMaktx">모델명</label>
-                        <input id="txtMaktx" type="text" />
+                        <label for="txtMaktx2">모델명</label>
+                        <input id="txtMaktx2" type="text" />
                     </div>
                 </div>
                 <br/><br/>
                 <h4>텍스트 입력 상태</h4>
                 <div class="input-T">
                     <div class="input-in">
-                        <input type="text" id="part_name" title="부품 입력창">
+                        <input type="text" id="part_name" />
                     </div>
                     <div class="guide-wrap">
                         <div class="guide">
@@ -92,7 +92,7 @@
                 <br/><br/>
                 <div class="input-T">
                     <div class="input-in">
-                        <input type="text" id="part_name" title="부품 입력창">
+                        <input type="text" id="part_name2" />
                     </div>
                     <div class="guide-wrap">
                         <div class="error">
@@ -103,7 +103,7 @@
                 <br/><br/>
                 <div class="input-T">
                     <div class="input-in">
-                        <input type="text" id="part_name" title="부품 입력창">
+                        <input type="text" id="part_name3" />
                     </div>
                     <div class="guide-wrap">
                         <div class="guide">
@@ -117,7 +117,7 @@
                 <br/><br/>
                 <div class="input-T">
                     <div class="input-in">
-                        <input type="text" id="part_name" title="부품 입력창">
+                        <input type="text" id="part_name4" />
                     </div>
                     <div class="guide-wrap">
                         <div class="complete">
@@ -155,7 +155,163 @@
                     <option value="F">공통</option>
                     <option value="G">기타</option>
                 </select>
-
+                <br/><br/>
+                <div class="datePicker-W">
+                    <div class="ui-datePicker" style="width:200px;">
+                        <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                    </div>
+                    <span>~</span>
+                    <div class="ui-datePicker" style="width:200px;">
+                        <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                    </div>
+                </div>
+                <br/><br/>
+                <h4>체크박스</h4>
+                <div class="input-C noTxt">
+                    <input id="check_01" type="checkbox">
+                    <label for="check_01"></label>
+                </div>
+                <div class="input-C noTxt">
+                    <input id="check_02" type="checkbox" disabled="">
+                    <label for="check_02"></label>
+                </div>
+                <br/><br/>
+                <div class="input-C">
+                    <input id="check_03" type="checkbox">
+                    <label for="check_03">전체 선택</label>
+                </div>
+                <div class="input-C">
+                    <input id="check_04" type="checkbox">
+                    <label for="check_04">카테고리 미지정 상품</label>
+                </div>
+                <br/><br/>
+                (2)
+                <ul class="list-type col2">
+                    <li>
+                        <div class="list-in">
+                            <div class="input-C">
+                                <input id="check02_01" type="checkbox">
+                                <label for="check02_01">카테고리 11</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-in">
+                            <div class="input-C">
+                                <input id="check02_02" type="checkbox">
+                                <label for="check02_02">카테고리 22</label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <br/><br/>
+                (3)
+                <ul class="list-type col3">
+                    <li>
+                        <div class="list-in">
+                            <div class="input-C">
+                                <input id="check03_01" type="checkbox">
+                                <label for="check03_01">카테고리 11</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-in">
+                            <div class="input-C">
+                                <input id="check03_02" type="checkbox">
+                                <label for="check03_02">카테고리 22</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-in">
+                            <div class="input-C">
+                                <input id="check03_03" type="checkbox">
+                                <label for="check03_03">카테고리 33</label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <br/><br/>
+                (4)
+                <ul class="list-type col4">
+                    <li>
+                        <div class="list-in">
+                            <div class="input-C">
+                                <input id="check04_01" type="checkbox">
+                                <label for="check04_01">카테고리 11</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-in">
+                            <div class="input-C">
+                                <input id="check04_02" type="checkbox">
+                                <label for="check04_02">카테고리 22</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-in">
+                            <div class="input-C">
+                                <input id="check04_03" type="checkbox">
+                                <label for="check04_03">카테고리 33</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-in">
+                            <div class="input-C">
+                                <input id="check04_04" type="checkbox">
+                                <label for="check04_04">카테고리 44</label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <br/><br/>
+                (4)
+                <ul class="list-type col5">
+                    <li>
+                        <div class="list-in">
+                            <div class="input-C">
+                                <input id="check05_01" type="checkbox">
+                                <label for="check05_01">카테고리 11</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-in">
+                            <div class="input-C">
+                                <input id="check05_02" type="checkbox">
+                                <label for="check05_02">카테고리 22</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-in">
+                            <div class="input-C">
+                                <input id="check05_03" type="checkbox">
+                                <label for="check05_03">카테고리 33</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-in">
+                            <div class="input-C">
+                                <input id="check05_04" type="checkbox">
+                                <label for="check05_04">카테고리 44</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-in">
+                            <div class="input-C">
+                                <input id="check05_05" type="checkbox">
+                                <label for="check05_05">카테고리 55</label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
 
             </div>
         </div>

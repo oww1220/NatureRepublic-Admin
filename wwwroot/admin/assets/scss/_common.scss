@@ -134,6 +134,21 @@ $extra-small-devices: 320px;
     word-wrap: break-word;
 }
 
+/*요소 날림*/
+@mixin HiddenTag {
+    overflow: hidden;
+    position: absolute;
+    left: -1000px;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    z-index: -1000;
+    visibility: hidden;
+}
+
 /*투명도 믹스인*/
 @mixin Opacity($opacity) {
     opacity: $opacity; /* All modern browsers */

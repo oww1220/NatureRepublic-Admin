@@ -21,7 +21,7 @@ $(() => {
             dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
         },
         function (e) {
-            console.log('날짜변경됨');
+            //console.log('날짜변경됨');
         },
     );
 
