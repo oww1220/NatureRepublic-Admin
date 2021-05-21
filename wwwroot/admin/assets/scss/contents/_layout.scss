@@ -6,6 +6,24 @@
     }
 }
 
+.title-W {
+    h2 {
+        @include Bold;
+        font-size: 30px;
+        line-height: 1.4;
+    }
+    h3 {
+        @include Bold;
+        font-size: 25px;
+        line-height: 1.4;
+    }
+    h4 {
+        @include Bold;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
 .hasmap-wrap {
     display: block;
     position: relative;

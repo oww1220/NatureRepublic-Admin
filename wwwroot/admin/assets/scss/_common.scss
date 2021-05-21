@@ -10,11 +10,11 @@ $extra-small-devices: 320px;
     }
 }
 @mixin Normal {
-    font-family: 'ManropeR', 'NotoR', serif;
+    font-family: 'ManropeR', 'NotoR', serif !important;
     font-weight: normal;
 }
 @mixin Bold {
-    font-family: 'ManropeB', 'NotoB', serif;
+    font-family: 'ManropeB', 'NotoB', serif !important;
     font-weight: normal;
 }
 

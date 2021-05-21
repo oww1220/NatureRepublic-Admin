@@ -70,9 +70,12 @@
 		.tab_menu a{display: inline-block;padding: 10px;background-color: #fff;color: #000;border:1px solid #000;}
 		.tab_menu a.active {background-color: #000;color: #fff;}
 	</style>
-	<script type="text/javascript" src="../assets/scripts/jquery/jquery-1.9.1.min.js"></script>
+	<script defer type="text/javascript" src="./assets/scripts/bundle/jquery.chunk.js"></script>
+    <script defer type="text/javascript" src="./assets/scripts/bundle/vendors.chunk.js"></script>
+    <script defer type="text/javascript" src="./assets/scripts/bundle/UI.bundle.js"></script>
+
 	<script type="text/javascript">
-		$(function(){
+		window.addEventListener('DOMContentLoaded', function(event) {
 
 			function toDayCaculate(){
 				var date = new Date();
@@ -170,11 +173,21 @@
 			<tbody>
 				<!-- 가이드 ================================================================================ -->
 				<tr class="line">
-					<td rowspan="2">가이드</td>
+					<td rowspan="3">가이드</td>
 					<td>버튼및 인풋</td>
 					<td></td>
 					<td></td>
 					<td><a href="./html/guide/button.html" target="_blank">button.html</a></td>
+					<td class="t_center txt_add"></td>
+					<td class="t_center txt_fin"></td>
+					<td class="t_center txt_ing"></td>
+					<td></td>
+				</tr>
+				<tr> 
+					<td>테이블</td>
+					<td></td>
+					<td></td>
+					<td><a href="./html/guide/table.html" target="_blank">table.html</a></td>
 					<td class="t_center txt_add"></td>
 					<td class="t_center txt_fin"></td>
 					<td class="t_center txt_ing"></td>

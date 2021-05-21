@@ -236,6 +236,29 @@ textarea::placeholder {
     font-style: normal;
 }
 
+//Manrope
+@font-face {
+    font-family: 'ManropeL';
+    src: url('../fonts/Manrope/Manrope-Light.woff') format('woff'),
+        url('../fonts/Manrope/Manrope-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ManropeR';
+    src: url('../fonts/Manrope/Manrope-Regular.woff') format('woff'),
+        url('../fonts/Manrope/Manrope-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ManropeB';
+    src: url('../fonts/Manrope/Manrope-Bold.woff') format('woff'),
+        url('../fonts/Manrope/Manrope-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .clear {
     content: '';
     display: block;
@@ -268,13 +291,11 @@ textarea::placeholder {
 }
 
 .txtBold {
-    /*font-family:"ManropeB", "NotoM", serif;*/
-    font-family: 'SpoqaB', serif !important;
+    font-family: 'ManropeB', 'NotoB', serif !important;
     font-weight: normal !important;
 }
 .txtNormal {
-    /*font-family:"ManropeL", "NotoL", serif;*/
-    font-family: 'SpoqaL', serif !important;
+    font-family: 'ManropeL', 'NotoL', serif !important;
     font-weight: normal !important;
 }
 .texBlack {

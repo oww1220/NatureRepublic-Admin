@@ -521,7 +521,7 @@
                 </div>
 
                 <script>
-                window.addEventListener('DOMContentLoaded', (event) => {
+                window.addEventListener('DOMContentLoaded', function(event) {
                     $('.file-upload').on('change', '.item-file input', function(){
                         var $target = $(this),
                             fileName = $target.val(),

@@ -34,50 +34,5 @@
     }
 }
 
--col1 {
-    @include Flex-start-start($wrap: wrap);
-    > li {
-        width: 100%;
-        .list-in {
-            height: 100%;
-            width: auto;
-            margin: 10px 0 0;
-        }
-    }
-}
-.list-type-col2 {
-    @include Flex-start-start($wrap: wrap);
-    width: 100%;
-    > li {
-        width: 50%;
-        .list-in {
-        }
-    }
-}
-.list-type-col3 {
-    @include Flex-start-start($wrap: wrap);
-    width: 100%;
-    > li {
-        width: 33.333%;
-        .list-in {
-        }
-    }
-}
-.list-type-col4 {
-    @include Flex-start-start($wrap: wrap);
-    width: 100%;
-    > li {
-        width: 25%;
-        .list-in {
-        }
-    }
-}
-.list-type-col5 {
-    @include Flex-start-start($wrap: wrap);
-    width: 100%;
-    > li {
-        width: 20%;
-        .list-in {
-        }
-    }
+.table-W {
 }
