@@ -108,6 +108,7 @@ dist
 /coverage
 
 # production
+/docs
 /build
 /wwwroot/admin/assets/scripts/build
 *.map
