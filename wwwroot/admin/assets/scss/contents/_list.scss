@@ -2,7 +2,8 @@
     width: 100%;
     @include Flex-start-start($wrap: wrap);
     .list-in {
-        .input-C {
+        .input-C,
+        .input-R {
             margin-right: 0;
         }
     }
