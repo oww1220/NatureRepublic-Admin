@@ -2,9 +2,7 @@ import '@babel/polyfill';
 import { Iiscrolls, IJqMap, SwiperParam, slideSortParam } from 'CommonUI';
 import jQuery from 'jquery';
 import 'jqueryui';
-import 'slick-carousel';
 import IScroll from 'iscroll';
-import Swiper from 'swiper';
 
 namespace CommonUI {
     export const $: JQueryStatic = jQuery;
@@ -89,17 +87,6 @@ namespace CommonUI {
             }
 
             return new JqMap();
-        },
-    };
-    export const Slide = {
-        init(target: SwiperParam, sort: slideSortParam, option?: IObj) {
-            if (sort == 'slick' && typeof target === 'string') {
-                const $target = $(target);
-                return $target.slick(option!);
-            }
-            if (sort === 'swiper') {
-                return new Swiper(target, option!);
-            }
         },
     };
     export const Layer = {

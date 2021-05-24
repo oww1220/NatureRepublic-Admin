@@ -35,4 +35,26 @@
 }
 
 .table-W {
+    &.row {
+        table {
+            width: 100%;
+            border: 1px solid #dfdfdf;
+            th {
+                @include BreakWord;
+                color: #222;
+                padding: 16px 0 16px 20px;
+                text-align: left;
+                line-height: 1.4;
+                height: auto;
+                background-clip: padding-box;
+            }
+            td {
+                @include BreakWord;
+                padding: 9px 20px 9px 20px;
+                background: #fff;
+                line-height: 1.4;
+                background-clip: padding-box;
+            }
+        }
+    }
 }

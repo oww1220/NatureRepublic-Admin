@@ -81,45 +81,35 @@ gulp.task('webpack', ()=>
         output: {filename: '[name].bundle.js'},
         */
         output: {
-            filename: 'UI.bundle.js',
-            chunkFilename: '[name].chunk.js',
-            //chunkFilename: '[name].chunk.[chunkhash].js',
+            filename: '[name].chunk.js',
         },
         resolve: {
             extensions: ['.js']
         },
         optimization: {
             splitChunks: {
+                chunks: 'all',
+                maxInitialRequests: Infinity,
+                minSize: 0,
                 cacheGroups: {
+                    vendors: {
+                        test: /[\\/]node_modules[\\/]/,
+                        name: 'vendors',
+                        priority: 1,
+                        reuseExistingChunk: true,
+                    },
                     jquery: {
                         test: /[\\/]node_modules[\\/](jquery)[\\/]/,
                         name: 'jquery',
-                        chunks: 'all'
+                        priority: 2,
+                        reuseExistingChunk: true,
                     },
-                    vendor: {
-                        test(mod) {
-                            // exclude anything outside node modules
-                            if (!mod.context.includes('node_modules')) {
-                                return false;
-                            }
-                    
-                            // exclude jquery jquery-ui
-                            if (/[\\/]node_modules[\\/](jquery)[\\/]/.test(mod.context)) {
-                                return false;
-                            }
-                    
-                            // return all other node modules
-                            return true;
-                        },
-                        name: 'vendors',
-                        chunks: 'all'
+                    jqueryui: {
+                        test: /[\\/]node_modules[\\/](jqueryui)[\\/]/,
+                        name: 'jqueryui',
+                        priority: 2,
+                        reuseExistingChunk: true,
                     }
-                    /*
-                    commons: {
-                        test: /[\\/]node_modules[\\/]/,
-                        name: 'vendors',
-                        chunks: 'all'
-                    }*/
                 }
             }
         },
