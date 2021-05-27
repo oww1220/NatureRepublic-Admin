@@ -16,7 +16,7 @@ browserSync.init({
     port: 3337,
     open: false,
     directory: true,
-    server: './wwwroot/',
+    server: './wwwroot/admin/',
     browser: 'google chrome',
 });
 
@@ -192,11 +192,9 @@ gulp.task('watch', ()=> {
         gulp.series('sass')
     );
 
+    
     // watch ts
-    gulp.watch(
-        `${BASE_URL}/**/*.ts`,
-        gulp.series('ts', 'webpack', 'clean')
-    );
+    //gulp.watch(`${BASE_URL}/**/*.ts`,gulp.series('ts', 'webpack', 'clean'));
 
     // watch html
     gulp.watch(`${BASE_URL}/**/*.html`).on('change', browserSync.reload);
@@ -205,5 +203,6 @@ gulp.task('watch', ()=> {
 // task 묶어서 실행
 gulp.task(
     'default',
-    gulp.series('sass', 'ts', 'webpack', 'clean', 'watch')
+    //gulp.series('sass', 'ts', 'webpack', 'clean', 'watch')
+    gulp.series('sass', 'watch')
 );
