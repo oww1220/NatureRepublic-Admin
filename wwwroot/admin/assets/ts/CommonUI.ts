@@ -1,7 +1,5 @@
 import '@babel/polyfill';
 import { Iiscrolls, IJqMap, SwiperParam, slideSortParam } from 'CommonUI';
-import jQuery from 'jquery';
-import 'jqueryui';
 import IScroll from 'iscroll';
 
 namespace CommonUI {

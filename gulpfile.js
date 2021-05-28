@@ -1,4 +1,5 @@
 const URL = 'admin';
+const path = require('path');
 
 const gulp = require('gulp');
 const del = require('del');
@@ -84,6 +85,10 @@ gulp.task('webpack', ()=>
             filename: '[name].chunk.js',
         },
         resolve: {
+            //별칭으로 절대경로 설정
+            alias: {
+                '@src': path.resolve(__dirname, 'wwwroot/admin/assets/scripts/build')
+            },
             extensions: ['.js']
         },
         optimization: {
@@ -98,6 +103,7 @@ gulp.task('webpack', ()=>
                         priority: 1,
                         reuseExistingChunk: true,
                     },
+                    /*
                     jquery: {
                         test: /[\\/]node_modules[\\/](jquery)[\\/]/,
                         name: 'jquery',
@@ -109,7 +115,7 @@ gulp.task('webpack', ()=>
                         name: 'jqueryui',
                         priority: 2,
                         reuseExistingChunk: true,
-                    }
+                    }*/
                 }
             }
         },
@@ -194,7 +200,7 @@ gulp.task('watch', ()=> {
 
     
     // watch ts
-    //gulp.watch(`${BASE_URL}/**/*.ts`,gulp.series('ts', 'webpack', 'clean'));
+    gulp.watch(`${BASE_URL}/**/*.ts`,gulp.series('ts', 'webpack', 'clean'));
 
     // watch html
     gulp.watch(`${BASE_URL}/**/*.html`).on('change', browserSync.reload);
@@ -203,6 +209,6 @@ gulp.task('watch', ()=> {
 // task 묶어서 실행
 gulp.task(
     'default',
-    //gulp.series('sass', 'ts', 'webpack', 'clean', 'watch')
-    gulp.series('sass', 'watch')
+    gulp.series('sass', 'ts', 'webpack', 'clean', 'watch')
+    //gulp.series('sass', 'watch')
 );

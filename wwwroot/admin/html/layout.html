@@ -30,7 +30,6 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="/_lib/notification/notification.css" />
     <link rel="stylesheet" type="text/css" href="/_lib/ews/entypo.css" />
-    <link rel="stylesheet" type="text/css" href="/loadfile/files/cmm/site.css" />
     <link rel="stylesheet" type="text/css" href="/loadfile/files/cmm/admin.css">
 
     <script type="text/javascript" src="/_lib/jquery/js/jquery.min.js"></script>
@@ -39,7 +38,7 @@
     <script type="text/javascript" src="/_lib/propper/js/propper.min.js"></script>
     <script type="text/javascript" src="/_lib/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/_lib/fileinput/js/plugins/piexif.js"></script>
-    <script type="text/javascript"src="/_lib/fileinput/js/plugins/sortable.js"></script>
+    <script type="text/javascript" src="/_lib/fileinput/js/plugins/sortable.js"></script>
     <script type="text/javascript" src="/_lib/fileinput/js/fileinput.js"></script>
     <script type="text/javascript" src="/_lib/fileinput/themes/fas/theme.js"></script>
     <script type="text/javascript" src="/_lib/fileinput/themes/explorer-fas/theme.js"></script>
@@ -58,6 +57,8 @@
     <!--custom-->
     <link rel="stylesheet" type="text/css" href="/assets/styles/contents.css"/>
     <link rel="stylesheet" type="text/css" href="/assets/styles/modules.css"/>
+    <script defer type="text/javascript" src="../../assets/scripts/bundle/vendors.chunk.js"></script>
+    <script defer type="text/javascript" src="../../assets/scripts/bundle/main.chunk.js"></script>
 
 </head>
 <body class="page-body">
@@ -67,20 +68,23 @@
         <div class="sidebar-menu">
             <div class="sidebar-menu-inner">
                 <header class="logo-env">
-                    <!-- logo -->
-                    <div class="logo">
-                        <a href="/adm/"> <img src="/images/adm/logo@2x.png" width="120" alt="" /> </a>
-                    </div>
                     <!-- logo collapse icon -->
                     <div class="sidebar-collapse">
                         <a href="#" class="sidebar-collapse-icon">
                         <!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition --><i class="entypo-menu"></i> </a>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="/adm/"> 
+                            NATURE REPUBLIC
+                        </a>
                     </div>
                     <!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
                     <div class="sidebar-mobile-menu visible-xs">
                         <a href="#" class="with-animation">
                         <!-- add class "with-animation" to support animation --><i class="entypo-menu"></i> </a>
                     </div>
+                    
                 </header>
                 <ul id="main-menu" class="main-menu">
                     <li><a href="" title="기본설정" data-menunum="1"><i class="entypo-check"></i><span>기본설정</span></a>
@@ -232,7 +236,10 @@
         <!--//사이드바-->
 
         <div class="main-content">
-            
+            <div class="toggle_btn2" data-target="questions2_target01" data-on="true" data-siblings="true"><button type="button">하나만 열리는 슬라이드 토글1</button></div>
+            <div class="toggle_cont2 questions2_target01">토글1 내용</div>
+            <div class="toggle_btn2" data-target="questions2_target02" data-on="true" data-siblings="true"><button type="button">하나만 열리는 슬라이드 토글2</button></div>
+            <div class="toggle_cont2 questions2_target02">토글2 내용</div>
         </div>
 
     </div>
