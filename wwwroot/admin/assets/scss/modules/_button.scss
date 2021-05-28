@@ -1,4 +1,46 @@
 .ico {
+    @include Inline-block-config;
+    @include Hide_txt;
+    &.head01 {
+        @include Background($sprite: 'ico-head01');
+        width: 31px;
+        height: 25px;
+    }
+    &.head02 {
+        @include Background($sprite: 'ico-head02');
+        width: 31px;
+        height: 25px;
+    }
+    &.head03 {
+        @include Background($sprite: 'ico-head03');
+        width: 31px;
+        height: 25px;
+    }
+    &.head04 {
+        @include Background($sprite: 'ico-head04');
+        width: 31px;
+        height: 25px;
+    }
+    &.head05 {
+        @include Background($sprite: 'ico-head05');
+        width: 31px;
+        height: 25px;
+    }
+    &.head06 {
+        @include Background($sprite: 'ico-head06');
+        width: 31px;
+        height: 25px;
+    }
+    &.head07 {
+        @include Background($sprite: 'ico-head07');
+        width: 31px;
+        height: 25px;
+    }
+    &.head08 {
+        @include Background($sprite: 'ico-head08');
+        width: 31px;
+        height: 25px;
+    }
 }
 
 .bt {

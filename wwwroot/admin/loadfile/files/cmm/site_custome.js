@@ -1473,12 +1473,12 @@
 	 public_vars.$mainMenu.find('> li').addClass(root_level_class);
  
 	 var admMenu = getCookie('admMenu') ;
- 
-	 public_vars.$mainMenu.find('a').each(function(i,el) {
+	 public_vars.$mainMenu.find('> li > a').each(function(i,el) {
 		 var $this = $(el) ;
 		 if ( admMenu != 'undefined' ) {
 			 if ( admMenu == $this.data('menunum') ) {
-				 $this.parent('li').addClass('active').parents('li').addClass('opened');
+				 //console.log(admMenu,$this.data('menunum') , el)
+				 $this.parent('li').addClass('opened');
 			 }
 		 }
 		 $this.click( function(ev) {
@@ -1499,9 +1499,12 @@
 		 $link.click(function(ev)
 		 {
 			 ev.preventDefault();
-			 
+			 console.log($this);
+			 if(!$('.page-container').hasClass('sidebar-collapsed')) $this.siblings().removeClass('opened');
+	
 			 if( ! is_multiopen && $this.hasClass(root_level_class))
 			 {
+					
 				 var close_submenus = public_vars.$mainMenu.find('.' + root_level_class).not($this).find('> ul');
  
 				 close_submenus.each(function(i, el)
