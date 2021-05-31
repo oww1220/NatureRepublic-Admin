@@ -41,6 +41,43 @@
         width: 31px;
         height: 25px;
     }
+
+    &.config {
+        @include Background($sprite: 'ico-top01');
+        width: 30px;
+        height: 30px;
+    }
+    &.design {
+        @include Background($sprite: 'ico-top02');
+        width: 30px;
+        height: 30px;
+    }
+    &.crm {
+        @include Background($sprite: 'ico-top03');
+        width: 30px;
+        height: 30px;
+    }
+    &.alarm {
+        @include Background($sprite: 'ico-alarm');
+        position: relative;
+        width: 31px;
+        height: 34px;
+        em {
+            @include Position($top: 0px, $right: -7px);
+            @include Flex-center-center;
+            background-color: #89b03f;
+            font-size: 12px;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+        }
+    }
+    &.logout {
+        @include Background($sprite: 'ico-logout');
+        width: 30px;
+        height: 31px;
+    }
 }
 .opened {
     .head01 {

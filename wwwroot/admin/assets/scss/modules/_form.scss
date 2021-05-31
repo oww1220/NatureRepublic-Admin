@@ -388,3 +388,28 @@ select {
         //box-shadow: 0 1px 5px rgba(96, 97, 112, 0.3);
     }
 }
+
+.input_S {
+    @include Inline-block-config;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    position: relative;
+    input {
+        width: 100%;
+        border: 0;
+        height: 48px;
+        line-height: 46px;
+        padding-right: 50px;
+    }
+    button {
+        @include Position($top: 0px, $right: 1px);
+        @include Hide_txt;
+        @include Background($sprite: 'ico-search', $position: center center);
+        width: 48px;
+        height: 48px;
+        border: 0;
+    }
+}

@@ -1,4 +1,9 @@
 .page-container {
+    .main-content {
+        position: relative;
+        padding: 136px 80px 80px;
+        box-sizing: border-box;
+    }
     .sidebar-menu {
         background-color: #3c3e26;
         .sidebar-menu-inner {
@@ -107,6 +112,62 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .header-top {
+        @include Position($top: 0, $left: 0);
+        width: 100%;
+        @include Flex-between-center;
+        height: 98px;
+        background-color: #fff;
+        padding: 0 80px;
+        .left {
+            > ul {
+                @include Flex-start-center;
+                > li {
+                    @include Flex-start-center;
+                    a {
+                        font-size: 18px;
+                        color: #333;
+                        line-height: 34px;
+                    }
+                    + li {
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+        .right {
+            @include Flex-start-center;
+            > ul {
+                @include Flex-start-center;
+                > li {
+                    @include Flex-start-center;
+                    > a {
+                        font-size: 16px;
+                        color: #333;
+                        line-height: 34px;
+                    }
+                    + li {
+                        margin-left: 25px;
+                    }
+                }
+            }
+            .input_S {
+                margin-right: 50px;
+                width: 350px;
+            }
+        }
+        .dropdown-toggle {
+            @include Flex-start-center;
+            &:after {
+                @include Background($sprite: 'ico-down');
+                width: 10px;
+                height: 6px;
+                border: 0;
+                margin-left: 10px;
             }
         }
     }
