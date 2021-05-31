@@ -92,18 +92,31 @@ input[type='tel'] {
 .ui-datePicker {
     @include Inline-block-config;
     width: 153px;
-    height: 38px;
-    line-height: 38px;
+    height: 40px;
+    line-height: 40px;
     border-radius: 3px;
     background-color: #fff;
     font-size: 14px;
     border: 1px solid #ddd;
     position: relative;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        display: block;
+        @include Position($top: 0, $right: 0);
+        @include Background($sprite: 'ico-date', $position: center center);
+        display: block;
+        border: 0;
+        width: 40px;
+        height: 40px;
+        pointer-events: none;
+    }
     input {
         border: 0;
         width: 100%;
-        height: 38px;
-        line-height: 36px;
+        height: 40px;
+        line-height: 40px;
         vertical-align: top;
         color: #707070;
         cursor: pointer;
@@ -111,7 +124,7 @@ input[type='tel'] {
     .ui-datepicker-trigger {
         @include Hide_txt;
         @include Position($top: 0, $right: 0);
-        @include Background($sprite: 'icon_date', $position: center center, $size: 20px);
+        @include Background($sprite: 'ico-date', $size: 20px);
         display: block;
         border: 0;
         width: 40px;
@@ -190,22 +203,22 @@ select {
     input[type='checkbox'] {
         @include HiddenTag;
         & + label {
-            font-size: 14px;
-            padding-left: 22px;
-            line-height: 15px;
+            font-size: 16px;
+            padding-left: 29px;
+            line-height: 21px;
             display: block;
             position: relative;
             text-align: left;
             cursor: pointer;
-            min-height: 17px;
+            min-height: 20px;
             color: #666;
             &:before {
                 display: block;
                 content: '';
                 @include Position($top: 0, $left: 0);
                 @include Background($sprite: 'icon_check_off');
-                width: 16px;
-                height: 16px;
+                width: 20px;
+                height: 20px;
             }
         }
         &:checked + label {
@@ -233,22 +246,22 @@ select {
     input[type='radio'] {
         @include HiddenTag;
         & + label {
-            font-size: 14px;
-            padding-left: 22px;
-            line-height: 15px;
+            font-size: 16px;
+            padding-left: 29px;
+            line-height: 21px;
             display: block;
             position: relative;
             text-align: left;
             cursor: pointer;
-            min-height: 17px;
+            min-height: 20px;
             color: #666;
             &:before {
                 display: block;
                 content: '';
                 @include Position($top: 0, $left: 0);
                 @include Background($sprite: 'icon_radio_off');
-                width: 16px;
-                height: 16px;
+                width: 20px;
+                height: 20px;
             }
         }
         &:checked + label {
