@@ -123,7 +123,7 @@
         height: 98px;
         background-color: #fff;
         padding: 0 80px;
-        .left {
+        .left-side {
             > ul {
                 @include Flex-start-center;
                 > li {
@@ -139,7 +139,7 @@
                 }
             }
         }
-        .right {
+        .right-side {
             @include Flex-start-center;
             > ul {
                 @include Flex-start-center;
