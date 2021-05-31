@@ -1,8 +1,7 @@
-#wrap {
-    transition: padding 0.5s;
-    padding-left: 250px;
-    &.on {
-        padding-left: 0;
+.page-container {
+    min-width: 1024px;
+    .main-content {
+        background-color: #e9eaed;
     }
 }
 

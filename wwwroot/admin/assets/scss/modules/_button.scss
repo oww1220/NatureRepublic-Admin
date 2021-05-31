@@ -42,6 +42,32 @@
         height: 25px;
     }
 }
+.opened {
+    .head01 {
+        @include Background($sprite: 'ico-head01-on');
+    }
+    .head02 {
+        @include Background($sprite: 'ico-head02-on');
+    }
+    .head03 {
+        @include Background($sprite: 'ico-head03-on');
+    }
+    .head04 {
+        @include Background($sprite: 'ico-head04-on');
+    }
+    .head05 {
+        @include Background($sprite: 'ico-head05-on');
+    }
+    .head06 {
+        @include Background($sprite: 'ico-head06-on');
+    }
+    .head07 {
+        @include Background($sprite: 'ico-head07-on');
+    }
+    .head08 {
+        @include Background($sprite: 'ico-head08-on');
+    }
+}
 
 .bt {
     @include Inline-block-config;
