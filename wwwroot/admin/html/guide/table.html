@@ -2,80 +2,142 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<meta charset="utf-8">
+	<title>Nature Republic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
 
-    <link rel="stylesheet" href="../../assets/styles/modules.css"/>
-    <link rel="stylesheet" href="../../assets/styles/contents.css"/>
-    
-    <script defer type="text/javascript" src="../../assets/scripts/bundle/jquery.chunk.js"></script>
-    <script defer type="text/javascript" src="../../assets/scripts/bundle/jqueryui.chunk.js"></script>
-    <script defer type="text/javascript" src="../../assets/scripts/bundle/vendors.chunk.js"></script>
-    <script defer type="text/javascript" src="../../assets/scripts/bundle/main.chunk.js"></script>
+    <meta name="robots" content="index,follow">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="기빙백포럼">
+    <meta property="og:description" content="기빙백포럼">
+    <meta property="og:image" content="http://www.gbforum.kr/images/common/logo.png">
+    <meta property="og:url" content="http://www.gbforum.kr">
+    <!--<meta name="naver-site-verification" content="441dc23a09829af3d3193f1ad7e0e29716e147cc" />-->
+    <meta name="description" content="기빙백포럼">
+    <link rel="canonical" href="">
+
+    <!--<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;900&display=swap" rel="stylesheet">-->
+    <!--[if lt IE 10]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/_lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/_lib/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/_lib/fileinput/css/fileinput.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/_lib/fileinput/themes/explorer-fas/theme.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/_lib/notification/notification.css" />
+    <link rel="stylesheet" type="text/css" href="/_lib/ews/entypo.css" />
+    <link rel="stylesheet" type="text/css" href="/loadfile/files/cmm/admin.css">
+
+    <script type="text/javascript" src="/_lib/jquery/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/_lib/jquery-ui/jquery-ui.min.js"></script>
+
+    <!--include-->
+    <script type="text/javascript" src="../include_header.js"></script>
+
+    <script type="text/javascript" src="/_lib/jquery/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/_lib/propper/js/propper.min.js"></script>
+    <script type="text/javascript" src="/_lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/_lib/fileinput/js/plugins/piexif.js"></script>
+    <script type="text/javascript" src="/_lib/fileinput/js/plugins/sortable.js"></script>
+    <script type="text/javascript" src="/_lib/fileinput/js/fileinput.js"></script>
+    <script type="text/javascript" src="/_lib/fileinput/themes/fas/theme.js"></script>
+    <script type="text/javascript" src="/_lib/fileinput/themes/explorer-fas/theme.js"></script>
+    <script type="text/javascript" src="/_lib/jquery/jquery.mousescroll.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script type="text/javascript" src="/_lib/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <script type="text/javascript" src="/_lib/ews/ews.js"></script>
+    <script type="text/javascript" src="/_lib/ews/resizeable.js"></script>
+    <script type="text/javascript" src="/_lib/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="/loadfile/files/cmm/site_api.js"></script>
+    <script type="text/javascript" src="/loadfile/files/cmm/site_custome.js"></script>
+    <script type="text/javascript" src="/loadfile/files/cmm/site.js"></script>
+    <!-- mov -->
+    <script charset="utf-8" src="//cdn.iframe.ly/embed.js?api_key=2b0b6125101b04b09c8e26"></script>
+
+    <!--custom-->
+    <link rel="stylesheet" type="text/css" href="/assets/styles/contents.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/styles/modules.css"/>
+    <script type="text/javascript" src="../../assets/scripts/bundle/vendors.chunk.js"></script>
+    <script type="text/javascript" src="../../assets/scripts/bundle/main.chunk.js"></script>
 
 </head>
-<body>
+<body class="page-body">
+    <div class="page-container">
+        <!--사이드바-->
+        <div class="sidebar-menu">
+        </div>
+        <!--//사이드바-->
 
-    <style>
-        /* 페이지 가이드 전용 ================================================== */
-        .article_pg_guide {margin-bottom:50px; border:1px solid #CCC;width: 980px;margin: 50px auto 0;}
-        .article_pg_guide > h3 {margin-bottom:10px; padding:10px; border-bottom:1px solid #999; font-size:15px; color:#FFF; background:#555;}
-        .article_pg_guide > .inner {margin-bottom:5px; padding:10px;}
-        .article_pg_guide > .inner.bg {background-color:#EEE;}
-        .article_pg_guide > .inner > h4 {margin:10px 0; padding:10px; border-bottom:1px solid #555; font-size:15px;}
-        .article_pg_guide > .inner > p {margin:20px 0 10px 0; font-size:12px;}
-    </style>
+        <div class="main-content">
+            <!--상단-->
+            <div class="header-top"></div>
+            <!--//상단-->
+            <!--경로-->
+            <div class="path-W"></div>
+            <!--//경로-->
 
-    <main id="wrap on">
+            <style>
+                /* 페이지 가이드 전용 ================================================== */
+                .article_pg_guide {margin-bottom:50px; border:1px solid #CCC;width: 980px;margin: 50px auto 0;}
+                .article_pg_guide > h3 {margin-bottom:10px; padding:10px; border-bottom:1px solid #999; font-size:15px; color:#FFF; background:#555;}
+                .article_pg_guide > .inner {margin-bottom:5px; padding:10px;}
+                .article_pg_guide > .inner.bg {background-color:#EEE;}
+                .article_pg_guide > .inner > h4 {margin:10px 0; padding:10px; border-bottom:1px solid #555; font-size:15px;}
+                .article_pg_guide > .inner > p {margin:20px 0 10px 0; font-size:12px;}
+            </style>
+                    <div class="article_pg_guide">
+                        <h3>타이틀</h3>
+                        <div class="inner">
+            
+                            (1)
+                            <div class="title-W">
+                                <h2>큰 타이틀</h2>
+                            </div>
+                            <br/>
+                            (2)
+                            <div class="title-W">
+                                <h3>중간 타이틀</h3>
+                            </div>
+                            <br/>
+                            (3)
+                            <div class="title-W">
+                                <h4>소 타이틀</h4>
+                            </div>
+                            
+            
+                        </div>
+                    </div>
+            
+                    <div class="article_pg_guide">
+                        <h3>테이블</h3>
+                        <div class="inner">
+            
+                            <div class="table-W row">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:185px">
+                                        <col style="width:auto">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th><em>*</em>쇼핑몰명</th>
+                                            <td>aa</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+            
+                        </div>
+                    </div>
 
-        <div class="article_pg_guide">
-            <h3>타이틀</h3>
-            <div class="inner">
 
-                (1)
-                <div class="title-W">
-                    <h2>큰 타이틀</h2>
-                </div>
-                <br/>
-                (2)
-                <div class="title-W">
-                    <h3>중간 타이틀</h3>
-                </div>
-                <br/>
-                (3)
-                <div class="title-W">
-                    <h4>소 타이틀</h4>
-                </div>
-                
-
-            </div>
         </div>
 
-        <div class="article_pg_guide">
-            <h3>테이블</h3>
-            <div class="inner">
-
-                <div class="table-W row">
-                    <table>
-                        <colgroup>
-                            <col style="width:185px">
-                            <col style="width:auto">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th><em>*</em>쇼핑몰명</th>
-                                <td>aa</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-            </div>
-        </div>
-
-    </main>
-
+    </div>
 
 
 

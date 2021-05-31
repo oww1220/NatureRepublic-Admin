@@ -99,9 +99,107 @@ $(function(){
 </div>
     `;
 
+	var headerTop = `
+	<div class="header-top">
+			<div class="left-side">
+				<ul>
+					<li>
+						<a href=""><i class="ico config mr-5"></i>환경설정</a>
+					</li>
+					<li>
+						<a href=""><i class="ico design mr-5"></i>디자인관리</a>
+					</li>
+					<li>
+						<a href=""><i class="ico crm mr-5"></i>CRM</a>
+					</li>
+				</ul>
+			</div>
+			<div class="right-side">
+				<div class="input_S">
+					<input type="text" placeholder="검색어를 입력해주세요." />
+					<button type="button">검색</button>
+				</div>
+				<ul class="user-info pull-left pull-none-xsm">
+					<!-- Profile Info -->
+					<li class="profile-info dropdown">
+						<!-- add class "pull-right" if you want to place this from right -->
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> 
+							<!--
+							<img src="/images/adm/icn_user_001.png" alt="" class="img-circle" width="40"> -->
+							관리자                
+						</a>
+						<ul class="dropdown-menu">
+							<!-- Reverse Caret -->
+							<!--<li class="caret"></li>-->
+							<!-- Profile sub-links -->
+							<li>
+								<a href="/adm/mng/sms/index"> <i class="entypo-window"></i> 문자 발송 </a>
+							</li>
+							<li>
+								<a href="/adm/deviceuser/mobile/"> <i class="entypo-calendar"></i>접속기기관리</a>
+							</li>
+							<li>
+								<a href="/member/logout"> <i class="entypo-logout right"></i>Log Out</a>
+							</li>
+							<!--
+							<li>
+								<a href="/adm/sms/"> <i class="entypo-doc"></i> 쪽지 보내기 </a>
+							</li>
+							<li>
+								<a href="/adm/sms/"> <i class="entypo-print"></i> 영수증 인쇄 </a>
+							</li>
+							<li>
+								<a href="http://demo.neontheme.com/mailbox/main/"> <i class="entypo-mail"></i> Inbox
+								</a>
+							</li>
+							<li>
+								<a href="http://demo.neontheme.com/extra/calendar/"> <i class="entypo-calendar"></i> Calendar
+								</a>
+							</li>
+							<li>
+								<a href="#"> <i class="entypo-clipboard"></i> Tasks
+								</a>
+							</li>
+							-->
+						</ul>
+					</li>
+					
+					<li>
+						<a href="">
+							<i class="ico alarm"><em>11</em></i>
+						</a>
+					</li>
+					<li> 
+						<a href="">
+							<i class="ico logout"></i>
+						</a> 
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	`; 
+
+	var pathW = `
+		<div class="path-W">
+			<ul>
+				<li>
+					<a href="">Home</a>
+				</li>
+				<li>기본설정</li>
+				<li>사용자관리</li>
+			</ul>
+		</div>
+	`;
+
     
     $('.sidebar-menu').html(header);
     $('.sidebar-menu .sidebar-menu').unwrap();
 
+	$('.header-top').html(headerTop);
+    $('.header-top .header-top').unwrap();
+
+	$('.path-W').html(pathW);
+    $('.path-W .path-W').unwrap();
 
 });

@@ -2,554 +2,617 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<meta charset="utf-8">
+	<title>Nature Republic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
 
-    <link rel="stylesheet" href="../../assets/styles/modules.css"/>
-    <link rel="stylesheet" href="../../assets/styles/contents.css"/>
-    
-    <script defer type="text/javascript" src="../../assets/scripts/bundle/jquery.chunk.js"></script>
-    <script defer type="text/javascript" src="../../assets/scripts/bundle/jqueryui.chunk.js"></script>
-    <script defer type="text/javascript" src="../../assets/scripts/bundle/vendors.chunk.js"></script>
-    <script defer type="text/javascript" src="../../assets/scripts/bundle/main.chunk.js"></script>
+    <meta name="robots" content="index,follow">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="기빙백포럼">
+    <meta property="og:description" content="기빙백포럼">
+    <meta property="og:image" content="http://www.gbforum.kr/images/common/logo.png">
+    <meta property="og:url" content="http://www.gbforum.kr">
+    <!--<meta name="naver-site-verification" content="441dc23a09829af3d3193f1ad7e0e29716e147cc" />-->
+    <meta name="description" content="기빙백포럼">
+    <link rel="canonical" href="">
+
+    <!--<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;900&display=swap" rel="stylesheet">-->
+    <!--[if lt IE 10]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/_lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/_lib/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/_lib/fileinput/css/fileinput.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/_lib/fileinput/themes/explorer-fas/theme.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/_lib/notification/notification.css" />
+    <link rel="stylesheet" type="text/css" href="/_lib/ews/entypo.css" />
+    <link rel="stylesheet" type="text/css" href="/loadfile/files/cmm/admin.css">
+
+    <script type="text/javascript" src="/_lib/jquery/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/_lib/jquery-ui/jquery-ui.min.js"></script>
+
+    <!--include-->
+    <script type="text/javascript" src="../include_header.js"></script>
+
+    <script type="text/javascript" src="/_lib/jquery/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/_lib/propper/js/propper.min.js"></script>
+    <script type="text/javascript" src="/_lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/_lib/fileinput/js/plugins/piexif.js"></script>
+    <script type="text/javascript" src="/_lib/fileinput/js/plugins/sortable.js"></script>
+    <script type="text/javascript" src="/_lib/fileinput/js/fileinput.js"></script>
+    <script type="text/javascript" src="/_lib/fileinput/themes/fas/theme.js"></script>
+    <script type="text/javascript" src="/_lib/fileinput/themes/explorer-fas/theme.js"></script>
+    <script type="text/javascript" src="/_lib/jquery/jquery.mousescroll.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script type="text/javascript" src="/_lib/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <script type="text/javascript" src="/_lib/ews/ews.js"></script>
+    <script type="text/javascript" src="/_lib/ews/resizeable.js"></script>
+    <script type="text/javascript" src="/_lib/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="/loadfile/files/cmm/site_api.js"></script>
+    <script type="text/javascript" src="/loadfile/files/cmm/site_custome.js"></script>
+    <script type="text/javascript" src="/loadfile/files/cmm/site.js"></script>
+    <!-- mov -->
+    <script charset="utf-8" src="//cdn.iframe.ly/embed.js?api_key=2b0b6125101b04b09c8e26"></script>
+
+    <!--custom-->
+    <link rel="stylesheet" type="text/css" href="/assets/styles/contents.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/styles/modules.css"/>
+    <script type="text/javascript" src="../../assets/scripts/bundle/vendors.chunk.js"></script>
+    <script type="text/javascript" src="../../assets/scripts/bundle/main.chunk.js"></script>
 
 </head>
-<body>
+<body class="page-body">
+    <div class="page-container">
 
-    <style>
-        /* 페이지 가이드 전용 ================================================== */
-        .article_pg_guide {margin-bottom:50px; border:1px solid #CCC;width: 980px;margin: 50px auto 0;}
-        .article_pg_guide > h3 {margin-bottom:10px; padding:10px; border-bottom:1px solid #999; font-size:15px; color:#FFF; background:#555;}
-        .article_pg_guide > .inner {margin-bottom:5px; padding:10px;}
-        .article_pg_guide > .inner.bg {background-color:#EEE;}
-        .article_pg_guide > .inner > h4 {margin:10px 0; padding:10px; border-bottom:1px solid #555; font-size:15px;}
-        .article_pg_guide > .inner > p {margin:20px 0 10px 0; font-size:12px;}
-    </style>
+        <!--사이드바-->
+        <div class="sidebar-menu">
+        </div>
+        <!--//사이드바-->
 
-    <main id="wrap on">
+        <div class="main-content">
 
-        <div class="article_pg_guide">
-            <h3>인풋</h3>
-            <div class="inner">
+            <!--상단-->
+            <div class="header-top"></div>
+            <!--//상단-->
+            <!--경로-->
+            <div class="path-W"></div>
+            <!--//경로-->
 
-                <h4>기본 인풋</h4>
-                <div class="input-T" style="width: 127px;">
-                    <div class="input-in">
-                        <input type="text" id="txtStep1DateOff1" placeholder="Placeholder"/>
-                    </div>
-                </div>
-                <br/><br/>
-                <div class="input-T" style="width: 127px;">
-                    <div class="input-in">
-                        <input class="h30" type="text" id="txtStep1DateOff2" />
-                    </div>
-                </div>
-                <br/><br/>
-                <div class="input-T" style="width: 127px;">
-                    <div class="input-in">
-                        <input class="h25" type="text" id="txtStep1DateOff3" />
-                    </div>
-                </div>
-                <br/><br/>
-                <div class="input-T" style="width: 127px;">
-                    <div class="input-in">
-                        <input type="text" id="txtStep1DateOff4" disabled="disabled"/>
-                    </div>
-                </div>
-                <br/><br/>
-                <div class="input-T" style="width: 127px;">
-                    <div class="input-in">
-                        <input type="text" id="txtStep1DateOff5" placeholder="Placeholder" />
-                        <button type="button" class="bt remove-value" onclick="$(this).parent().find('input').val('')"></button>
-                    </div>
-                </div>
-                <br/><br/>
-                <h4>라벨이 있는 경우</h4>
-                <div class="input-T">
-                    <div class="input-in">
-                        <label for="txtMaktx1">모델명</label>
-                        <input id="txtMaktx1" type="text" />
-                    </div>
-                </div>
-                <br/><br/>
-                <div class="input-T">
-                    <div class="input-in left">
-                        <label for="txtMaktx2">모델명</label>
-                        <input id="txtMaktx2" type="text" />
-                    </div>
-                </div>
-                <br/><br/>
-                <h4>텍스트 입력 상태</h4>
-                <div class="input-T">
-                    <div class="input-in">
-                        <input type="text" id="part_name" />
-                    </div>
-                    <div class="guide-wrap">
-                        <div class="guide">
-                            Description text area
+            <style>
+                /* 페이지 가이드 전용 ================================================== */
+                .article_pg_guide {margin-bottom:50px; border:1px solid #CCC;width: 980px;margin: 50px auto 0;background: #fff;}
+                .article_pg_guide > h3 {margin-bottom:10px; padding:10px; border-bottom:1px solid #999; font-size:15px; color:#FFF; background:#555;}
+                .article_pg_guide > .inner {margin-bottom:5px; padding:10px;}
+                .article_pg_guide > .inner.bg {background-color:#EEE;}
+                .article_pg_guide > .inner > h4 {margin:10px 0; padding:10px; border-bottom:1px solid #555; font-size:15px;}
+                .article_pg_guide > .inner > p {margin:20px 0 10px 0; font-size:12px;}
+            </style>
+            <div class="article_pg_guide">
+                <h3>인풋</h3>
+                <div class="inner">
+
+                    <h4>기본 인풋</h4>
+                    <div class="input-T" style="width: 127px;">
+                        <div class="input-in">
+                            <input type="text" id="txtStep1DateOff1" placeholder="Placeholder"/>
                         </div>
                     </div>
-                </div>
-                <br/><br/>
-                <div class="input-T">
-                    <div class="input-in">
-                        <input type="text" id="part_name2" />
-                    </div>
-                    <div class="guide-wrap">
-                        <div class="error">
-                            잘못된 입력 값입니다.
+                    <br/><br/>
+                    <div class="input-T" style="width: 127px;">
+                        <div class="input-in">
+                            <input class="h30" type="text" id="txtStep1DateOff2" />
                         </div>
                     </div>
-                </div>
-                <br/><br/>
-                <div class="input-T">
-                    <div class="input-in">
-                        <input type="text" id="part_name3" />
-                    </div>
-                    <div class="guide-wrap">
-                        <div class="guide">
-                            Description text area
-                        </div>
-                        <div class="error">
-                            잘못된 입력 값입니다.
+                    <br/><br/>
+                    <div class="input-T" style="width: 127px;">
+                        <div class="input-in">
+                            <input class="h25" type="text" id="txtStep1DateOff3" />
                         </div>
                     </div>
-                </div>
-                <br/><br/>
-                <div class="input-T">
-                    <div class="input-in">
-                        <input type="text" id="part_name4" />
-                    </div>
-                    <div class="guide-wrap">
-                        <div class="complete">
-                            입력이 완료되었습니다.
-                        </div>
-                        <div class="guide">
-                            Description text area
+                    <br/><br/>
+                    <div class="input-T" style="width: 127px;">
+                        <div class="input-in">
+                            <input type="text" id="txtStep1DateOff4" disabled="disabled"/>
                         </div>
                     </div>
-                </div>
-                <br/><br/>
-                <h4>셀렉트</h4>
-                <select id="selImproveCode2"  style="width:185px;">
-                    <option value="">개선 방안(선택)</option>
-                    <option value="A">설계/검증</option>
-                    <option value="B">협력사</option>
-                    <option value="C">제조/서브</option>
-                    <option value="D">서비스</option>
-                    <option value="E">고객</option>
-                    <option value="F">공통</option>
-                    <option value="G">기타</option>
-                </select>
-                <select class="h30" style="width: 110px;">
-                    <option value="">담당</option>
-                    <option value="">담당</option>
-                    <option value="">담당</option>
-                </select>
-                <select class="h25" id="selImproveCode" style="width:185px;">
-                    <option value="">개선 방안(선택)</option>
-                    <option value="A">설계/검증</option>
-                    <option value="B">협력사</option>
-                    <option value="C">제조/서브</option>
-                    <option value="D">서비스</option>
-                    <option value="E">고객</option>
-                    <option value="F">공통</option>
-                    <option value="G">기타</option>
-                </select>
-                <br/><br/>
-                <div class="datePicker-W">
-                    <div class="ui-datePicker" style="width:200px;">
-                        <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                    <br/><br/>
+                    <div class="input-T" style="width: 127px;">
+                        <div class="input-in">
+                            <input type="text" id="txtStep1DateOff5" placeholder="Placeholder" />
+                            <button type="button" class="bt remove-value" onclick="$(this).parent().find('input').val('')"></button>
+                        </div>
                     </div>
-                    <span>~</span>
-                    <div class="ui-datePicker" style="width:200px;">
-                        <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                    <br/><br/>
+                    <h4>라벨이 있는 경우</h4>
+                    <div class="input-T">
+                        <div class="input-in">
+                            <label for="txtMaktx1">모델명</label>
+                            <input id="txtMaktx1" type="text" />
+                        </div>
                     </div>
-                </div>
-                <br/><br/>
-                <h4>체크박스</h4>
-                <div class="input-C noTxt">
-                    <input id="check_01" type="checkbox">
-                    <label for="check_01"></label>
-                </div>
-                <div class="input-C noTxt">
-                    <input id="check_02" type="checkbox" disabled="">
-                    <label for="check_02"></label>
-                </div>
-                <br/><br/>
-                (인라인)<br/>
-                <div class="input-C">
-                    <input id="check_03" type="checkbox">
-                    <label for="check_03">전체 선택</label>
-                </div>
-                <div class="input-C">
-                    <input id="check_04" type="checkbox">
-                    <label for="check_04">카테고리 미지정 상품</label>
-                </div>
-                <br/><br/>
-                (리스트 1)
-                <ul class="list-type col1">
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check01_01" type="checkbox">
-                                <label for="check01_01">카테고리 11</label>
-                            </div>
+                    <br/><br/>
+                    <div class="input-T">
+                        <div class="input-in left">
+                            <label for="txtMaktx2">모델명</label>
+                            <input id="txtMaktx2" type="text" />
                         </div>
-                    </li>
-                </ul>
-                <br/><br/>
-                (리스트 2)
-                <ul class="list-type col2">
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check02_01" type="checkbox">
-                                <label for="check02_01">카테고리 11</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check02_02" type="checkbox">
-                                <label for="check02_02">카테고리 22</label>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <br/><br/>
-                (리스트 3)
-                <ul class="list-type col3">
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check03_01" type="checkbox">
-                                <label for="check03_01">카테고리 11</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check03_02" type="checkbox">
-                                <label for="check03_02">카테고리 22</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check03_03" type="checkbox">
-                                <label for="check03_03">카테고리 33</label>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <br/><br/>
-                (리스트 4)
-                <ul class="list-type col4">
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check04_01" type="checkbox">
-                                <label for="check04_01">카테고리 11</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check04_02" type="checkbox">
-                                <label for="check04_02">카테고리 22</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check04_03" type="checkbox">
-                                <label for="check04_03">카테고리 33</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check04_04" type="checkbox">
-                                <label for="check04_04">카테고리 44</label>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <br/><br/>
-                (리스트 5)
-                <ul class="list-type col5">
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check05_01" type="checkbox">
-                                <label for="check05_01">카테고리 11</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check05_02" type="checkbox">
-                                <label for="check05_02">카테고리 22</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check05_03" type="checkbox">
-                                <label for="check05_03">카테고리 33</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check05_04" type="checkbox">
-                                <label for="check05_04">카테고리 44</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-C">
-                                <input id="check05_05" type="checkbox">
-                                <label for="check05_05">카테고리 55</label>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <br/><br/>
-                <h4>라디오</h4>
-                (인라인)<br/>
-                <div class="input-R">
-                    <input type="radio" id="radio00_01" name="radio00" value=""/>
-                    <label for="radio00_01">전체</label>
-                </div>
-                <div class="input-R">
-                    <input type="radio" id="radio00_02" name="radio00" value=""/>
-                    <label for="radio00_02">재고 연동 판매</label>
-                </div>
-                <br/><br/>
-                (리스트 1)
-                <ul class="list-type col1">
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input type="radio" id="radio01_01" name="radio01" value=""/>
-                                <label for="radio01_01">재고 연동 판매</label>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <br/><br/>
-                (리스트 2)
-                <ul class="list-type col2">
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input id="radio02_01" type="radio" name="radio02" value=""/>
-                                <label for="radio02_01">카테고리 11</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input id="radio02_02" type="radio" name="radio02" value=""/>
-                                <label for="radio02_02">카테고리 22</label>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <br/><br/>
-                (리스트 3)
-                <ul class="list-type col3">
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input id="radio03_01" type="radio" name="radio03" value=""/>
-                                <label for="radio03_01">카테고리 11</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input id="radio03_02" type="radio" name="radio03" value=""/>
-                                <label for="radio03_02">카테고리 22</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input id="radio03_03" type="radio" name="radio03" value=""/>
-                                <label for="radio03_03">카테고리 33</label>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <br/><br/>
-                (리스트 4)
-                <ul class="list-type col4">
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input id="radio04_01" type="radio" name="radio04" value=""/>
-                                <label for="radio04_01">카테고리 11</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input id="radio04_02" type="radio" name="radio04" value=""/>
-                                <label for="radio04_02">카테고리 22</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input id="radio04_03" type="radio" name="radio04" value=""/>
-                                <label for="radio04_03">카테고리 33</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input id="radio04_04" type="radio" name="radio04" value=""/>
-                                <label for="radio04_04">카테고리 44</label>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <br/><br/>
-                (리스트 5)
-                <ul class="list-type col5">
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input id="radio05_01" type="radio" name="radio05" value=""/>
-                                <label for="radio05_01">카테고리 11</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input id="radio05_02" type="radio" name="radio05" value=""/>
-                                <label for="radio05_02">카테고리 22</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input id="radio05_03" type="radio" name="radio05" value=""/>
-                                <label for="radio05_03">카테고리 33</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input id="radio05_04" type="radio" name="radio05" value=""/>
-                                <label for="radio05_04">카테고리 44</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-in">
-                            <div class="input-R">
-                                <input id="radio05_05" type="radio" name="radio05" value=""/>
-                                <label for="radio05_05">카테고리 55</label>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <br/><br/>
-                <h4>스위치</h4>
-                (off)<br/>
-                <div class="toggle-W">
-                    <div class="toggle normal">
-                        <input id="ch001" type="checkbox" />
-                        <label class="toggle-item" for="ch001"></label>
                     </div>
-                </div>
-                <br/><br/>
-                (on)<br/>
-                <div class="toggle-W">
-                    <div class="toggle normal">
-                        <input id="ch002" type="checkbox" checked="checked"/>
-                        <label class="toggle-item" for="ch002"></label>
+                    <br/><br/>
+                    <h4>텍스트 입력 상태</h4>
+                    <div class="input-T">
+                        <div class="input-in">
+                            <input type="text" id="part_name" />
+                        </div>
+                        <div class="guide-wrap">
+                            <div class="guide">
+                                Description text area
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <br/><br/>
-                <h4>textarea</h4>
-                <div class="textarea-W">
-                    <textarea cols="10" rows="3">가나다라 마바사</textarea>
-                </div>
-                <br/>
-                <div class="textarea-W">
-                    <textarea cols="10" rows="3" disabled="disabled"></textarea>
-                </div>
-                <br/><br/>
-                <h4>파일 업로드</h4>
-                <div class="file-upload">
-                    <ul>
+                    <br/><br/>
+                    <div class="input-T">
+                        <div class="input-in">
+                            <input type="text" id="part_name2" />
+                        </div>
+                        <div class="guide-wrap">
+                            <div class="error">
+                                잘못된 입력 값입니다.
+                            </div>
+                        </div>
+                    </div>
+                    <br/><br/>
+                    <div class="input-T">
+                        <div class="input-in">
+                            <input type="text" id="part_name3" />
+                        </div>
+                        <div class="guide-wrap">
+                            <div class="guide">
+                                Description text area
+                            </div>
+                            <div class="error">
+                                잘못된 입력 값입니다.
+                            </div>
+                        </div>
+                    </div>
+                    <br/><br/>
+                    <div class="input-T">
+                        <div class="input-in">
+                            <input type="text" id="part_name4" />
+                        </div>
+                        <div class="guide-wrap">
+                            <div class="complete">
+                                입력이 완료되었습니다.
+                            </div>
+                            <div class="guide">
+                                Description text area
+                            </div>
+                        </div>
+                    </div>
+                    <br/><br/>
+                    <h4>셀렉트</h4>
+                    <select id="selImproveCode2"  style="width:185px;">
+                        <option value="">개선 방안(선택)</option>
+                        <option value="A">설계/검증</option>
+                        <option value="B">협력사</option>
+                        <option value="C">제조/서브</option>
+                        <option value="D">서비스</option>
+                        <option value="E">고객</option>
+                        <option value="F">공통</option>
+                        <option value="G">기타</option>
+                    </select>
+                    <select class="h30" style="width: 110px;">
+                        <option value="">담당</option>
+                        <option value="">담당</option>
+                        <option value="">담당</option>
+                    </select>
+                    <select class="h25" id="selImproveCode" style="width:185px;">
+                        <option value="">개선 방안(선택)</option>
+                        <option value="A">설계/검증</option>
+                        <option value="B">협력사</option>
+                        <option value="C">제조/서브</option>
+                        <option value="D">서비스</option>
+                        <option value="E">고객</option>
+                        <option value="F">공통</option>
+                        <option value="G">기타</option>
+                    </select>
+                    <br/><br/>
+                    <div class="datePicker-W">
+                        <div class="ui-datePicker" style="width:200px;">
+                            <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                        </div>
+                        <span>~</span>
+                        <div class="ui-datePicker" style="width:200px;">
+                            <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                        </div>
+                    </div>
+                    <br/><br/>
+                    <h4>체크박스</h4>
+                    <div class="input-C noTxt">
+                        <input id="check_01" type="checkbox">
+                        <label for="check_01"></label>
+                    </div>
+                    <div class="input-C noTxt">
+                        <input id="check_02" type="checkbox" disabled="">
+                        <label for="check_02"></label>
+                    </div>
+                    <br/><br/>
+                    (인라인)<br/>
+                    <div class="input-C">
+                        <input id="check_03" type="checkbox">
+                        <label for="check_03">전체 선택</label>
+                    </div>
+                    <div class="input-C">
+                        <input id="check_04" type="checkbox">
+                        <label for="check_04">카테고리 미지정 상품</label>
+                    </div>
+                    <br/><br/>
+                    (리스트 1)
+                    <ul class="list-type col1">
                         <li>
-                            <div class="item-file">
-                                <div class="item-text" style="width: 300px;">
-                                    <div class="text-value"></div>
-                                    <button type="button" class="bt remove-value">닫기</button>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check01_01" type="checkbox">
+                                    <label for="check01_01">카테고리 11</label>
                                 </div>
-                                <input type="file" id="file09">
-                                <label class="bt type05 ml-10" for="file09">파일선택</label>
                             </div>
                         </li>
                     </ul>
+                    <br/><br/>
+                    (리스트 2)
+                    <ul class="list-type col2">
+                        <li>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check02_01" type="checkbox">
+                                    <label for="check02_01">카테고리 11</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check02_02" type="checkbox">
+                                    <label for="check02_02">카테고리 22</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <br/><br/>
+                    (리스트 3)
+                    <ul class="list-type col3">
+                        <li>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check03_01" type="checkbox">
+                                    <label for="check03_01">카테고리 11</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check03_02" type="checkbox">
+                                    <label for="check03_02">카테고리 22</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check03_03" type="checkbox">
+                                    <label for="check03_03">카테고리 33</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <br/><br/>
+                    (리스트 4)
+                    <ul class="list-type col4">
+                        <li>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check04_01" type="checkbox">
+                                    <label for="check04_01">카테고리 11</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check04_02" type="checkbox">
+                                    <label for="check04_02">카테고리 22</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check04_03" type="checkbox">
+                                    <label for="check04_03">카테고리 33</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check04_04" type="checkbox">
+                                    <label for="check04_04">카테고리 44</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <br/><br/>
+                    (리스트 5)
+                    <ul class="list-type col5">
+                        <li>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check05_01" type="checkbox">
+                                    <label for="check05_01">카테고리 11</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check05_02" type="checkbox">
+                                    <label for="check05_02">카테고리 22</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check05_03" type="checkbox">
+                                    <label for="check05_03">카테고리 33</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check05_04" type="checkbox">
+                                    <label for="check05_04">카테고리 44</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-C">
+                                    <input id="check05_05" type="checkbox">
+                                    <label for="check05_05">카테고리 55</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <br/><br/>
+                    <h4>라디오</h4>
+                    (인라인)<br/>
+                    <div class="input-R">
+                        <input type="radio" id="radio00_01" name="radio00" value=""/>
+                        <label for="radio00_01">전체</label>
+                    </div>
+                    <div class="input-R">
+                        <input type="radio" id="radio00_02" name="radio00" value=""/>
+                        <label for="radio00_02">재고 연동 판매</label>
+                    </div>
+                    <br/><br/>
+                    (리스트 1)
+                    <ul class="list-type col1">
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input type="radio" id="radio01_01" name="radio01" value=""/>
+                                    <label for="radio01_01">재고 연동 판매</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <br/><br/>
+                    (리스트 2)
+                    <ul class="list-type col2">
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input id="radio02_01" type="radio" name="radio02" value=""/>
+                                    <label for="radio02_01">카테고리 11</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input id="radio02_02" type="radio" name="radio02" value=""/>
+                                    <label for="radio02_02">카테고리 22</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <br/><br/>
+                    (리스트 3)
+                    <ul class="list-type col3">
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input id="radio03_01" type="radio" name="radio03" value=""/>
+                                    <label for="radio03_01">카테고리 11</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input id="radio03_02" type="radio" name="radio03" value=""/>
+                                    <label for="radio03_02">카테고리 22</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input id="radio03_03" type="radio" name="radio03" value=""/>
+                                    <label for="radio03_03">카테고리 33</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <br/><br/>
+                    (리스트 4)
+                    <ul class="list-type col4">
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input id="radio04_01" type="radio" name="radio04" value=""/>
+                                    <label for="radio04_01">카테고리 11</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input id="radio04_02" type="radio" name="radio04" value=""/>
+                                    <label for="radio04_02">카테고리 22</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input id="radio04_03" type="radio" name="radio04" value=""/>
+                                    <label for="radio04_03">카테고리 33</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input id="radio04_04" type="radio" name="radio04" value=""/>
+                                    <label for="radio04_04">카테고리 44</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <br/><br/>
+                    (리스트 5)
+                    <ul class="list-type col5">
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input id="radio05_01" type="radio" name="radio05" value=""/>
+                                    <label for="radio05_01">카테고리 11</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input id="radio05_02" type="radio" name="radio05" value=""/>
+                                    <label for="radio05_02">카테고리 22</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input id="radio05_03" type="radio" name="radio05" value=""/>
+                                    <label for="radio05_03">카테고리 33</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input id="radio05_04" type="radio" name="radio05" value=""/>
+                                    <label for="radio05_04">카테고리 44</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-in">
+                                <div class="input-R">
+                                    <input id="radio05_05" type="radio" name="radio05" value=""/>
+                                    <label for="radio05_05">카테고리 55</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <br/><br/>
+                    <h4>스위치</h4>
+                    (off)<br/>
+                    <div class="toggle-W">
+                        <div class="toggle normal">
+                            <input id="ch001" type="checkbox" />
+                            <label class="toggle-item" for="ch001"></label>
+                        </div>
+                    </div>
+                    <br/><br/>
+                    (on)<br/>
+                    <div class="toggle-W">
+                        <div class="toggle normal">
+                            <input id="ch002" type="checkbox" checked="checked"/>
+                            <label class="toggle-item" for="ch002"></label>
+                        </div>
+                    </div>
+                    <br/><br/>
+                    <h4>textarea</h4>
+                    <div class="textarea-W">
+                        <textarea cols="10" rows="3">가나다라 마바사</textarea>
+                    </div>
+                    <br/>
+                    <div class="textarea-W">
+                        <textarea cols="10" rows="3" disabled="disabled"></textarea>
+                    </div>
+                    <br/><br/>
+                    <h4>파일 업로드</h4>
+                    <div class="file-upload">
+                        <ul>
+                            <li>
+                                <div class="item-file">
+                                    <div class="item-text" style="width: 300px;">
+                                        <div class="text-value"></div>
+                                        <button type="button" class="bt remove-value">닫기</button>
+                                    </div>
+                                    <input type="file" id="file09">
+                                    <label class="bt type05 ml-10" for="file09">파일선택</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <script>
+                    window.addEventListener('DOMContentLoaded', function(event) {
+                        $('.file-upload').on('change', '.item-file input', function(){
+                            var $target = $(this),
+                                fileName = $target.val(),
+                                text = $target.parent().find('.item-text');
+
+                            text.find('.text-value').text(fileName);
+                            text.find('button').show();
+                        });
+                        $('.file-upload').on('click', '.item-text button', function(){
+                            var $target = $(this),
+                                parent = $target.parent().parent();
+
+                            parent.find('.text-value').text('');
+                            parent.find('input').val('');
+                            $target.hide();
+                            
+                        });
+                    });
+                    </script>
+                    
+
                 </div>
-
-                <script>
-                window.addEventListener('DOMContentLoaded', function(event) {
-                    $('.file-upload').on('change', '.item-file input', function(){
-                        var $target = $(this),
-                            fileName = $target.val(),
-                            text = $target.parent().find('.item-text');
-
-                        text.find('.text-value').text(fileName);
-                        text.find('button').show();
-                    });
-                    $('.file-upload').on('click', '.item-text button', function(){
-                        var $target = $(this),
-                            parent = $target.parent().parent();
-
-                        parent.find('.text-value').text('');
-                        parent.find('input').val('');
-                        $target.hide();
-                        
-                    });
-                });
-                </script>
-                
-
             </div>
+            
         </div>
 
-    </main>
 
-
+    </div>
 
 
 </body>

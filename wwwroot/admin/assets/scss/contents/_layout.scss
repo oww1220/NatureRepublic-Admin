@@ -5,6 +5,31 @@
     }
 }
 
+.path-W {
+    @include Flex-end-center;
+    > ul {
+        @include Flex-start-center;
+        > li {
+            @include Flex-start-center;
+            color: #818286;
+            font-size: 14px;
+            line-height: 20px;
+            > a {
+                color: #818286;
+                font-size: 14px;
+            }
+            + li {
+                &:before {
+                    display: block;
+                    content: '>';
+                    color: #818286;
+                    margin: 0 3px;
+                }
+            }
+        }
+    }
+}
+
 .title-W {
     h2 {
         @include Bold;
