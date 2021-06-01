@@ -426,3 +426,27 @@ select {
         border: 0;
     }
 }
+
+.radio-tab {
+    @include Flex-start-center;
+    > li {
+        + li {
+            margin-left: 5px;
+        }
+        input[type='radio'] {
+            & + label {
+                border: 1px solid #ddd;
+                height: 33px;
+                padding: 0 13px;
+                @include Flex-center-center;
+                border-radius: 50px;
+                min-width: 60px;
+            }
+            &:checked + label {
+                border-color: #3c3e26;
+                background-color: #3c3e26;
+                color: #fff;
+            }
+        }
+    }
+}

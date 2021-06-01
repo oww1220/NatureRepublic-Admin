@@ -78,6 +78,21 @@
         width: 30px;
         height: 31px;
     }
+    &.excel {
+        @include Background($sprite: 'ico-excel');
+        width: 15px;
+        height: 17px;
+    }
+    &.print {
+        @include Background($sprite: 'ico-print');
+        width: 14px;
+        height: 12px;
+    }
+    &.modify {
+        @include Background($sprite: 'ico-modify');
+        width: 11px;
+        height: 13px;
+    }
 }
 .opened {
     .head01 {
@@ -107,7 +122,8 @@
 }
 
 .bt {
-    @include Inline-block-config;
+    @include Flex-center-center($display: inline-flex);
+    cursor: pointer;
     &.remove-value {
         @include Background($sprite: 'btn_attach_delete', $type: 'gif');
         @include Hide_txt;
@@ -115,6 +131,7 @@
         height: 14px;
     }
     &.type05 {
+        @include Inline-block-config;
         box-sizing: border-box;
         border-radius: 3px;
         border: 1px solid #c4cbd0;
@@ -126,5 +143,46 @@
         line-height: 28px;
         width: 68px;
         min-width: 68px;
+    }
+    &.normal {
+        background-color: #fff;
+        color: #58595b;
+        font-size: 16px;
+        width: 150px;
+        height: 43px;
+        border: 1px solid #e7e7e7;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 0 5px;
+        &.green {
+            border-color: #89b03f;
+            background-color: #89b03f;
+            color: #fff;
+        }
+    }
+    &.middle {
+        height: 33px;
+        padding: 0 15px;
+        background-color: #fff;
+        color: #58595b;
+        font-size: 14px;
+        border: 1px solid #e7e7e7;
+        box-sizing: border-box;
+        i {
+            margin-right: 5px;
+        }
+        &.black {
+            border-color: #3c3e26;
+            background-color: #3c3e26;
+            color: #fff;
+        }
+    }
+}
+
+.bt-W {
+    font-size: 0;
+    @include Flex-center-center;
+    .bt + .bt {
+        margin-left: 10px;
     }
 }

@@ -58,3 +58,53 @@
         }
     }
 }
+
+/* pagination */
+.paging {
+    &-W {
+        @include Flex-center-center;
+        .bt {
+            width: 35px;
+            height: 35px;
+            box-sizing: border-box;
+            border: 1px solid #e7e7e7;
+            @include Hide_txt;
+        }
+        .paging-before {
+            @include Background($sprite: 'ico-paging-before', $position: center center);
+            margin-right: 5px;
+        }
+        .paging-prev {
+            @include Background($sprite: 'ico-paging-prev', $position: center center);
+            margin-right: 5px;
+        }
+        .paging-next {
+            @include Background($sprite: 'ico-paging-next', $position: center center);
+            margin-left: 5px;
+        }
+        .paging-after {
+            @include Background($sprite: 'ico-paging-after', $position: center center);
+            margin-left: 5px;
+        }
+    }
+    &-list {
+        @include Flex-center-center;
+        li {
+            margin: 0 7px;
+            a {
+                @include Flex-center-center;
+                height: 35px;
+                font-size: 15px;
+                padding: 0 5px;
+            }
+            strong {
+                @include Flex-center-center;
+                padding: 0 3px;
+                height: 20px;
+                color: #89b03f;
+                font-size: 15px;
+                border-bottom: 1px solid #89b03f;
+            }
+        }
+    }
+}
