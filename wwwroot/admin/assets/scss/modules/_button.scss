@@ -121,8 +121,62 @@
     }
 }
 
+.icoTxt {
+    @include Flex-center-center($display: inline-flex);
+    font-size: 10px;
+    width: 17px;
+    height: 17px;
+    margin: 0 1px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    &.dark-orange {
+        background-color: #c27048;
+    }
+    &.wine {
+        background-color: #8a494d;
+    }
+    &.light-green {
+        background-color: #89b03f;
+    }
+    &.dark-green {
+        background-color: #3a5542;
+    }
+}
+
+.icoLine {
+    @include Flex-center-center($display: inline-flex);
+    font-size: 10px;
+    height: 17px;
+    padding: 0 3px;
+    margin: 0 1px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    letter-spacing: 0;
+    border-radius: 3px;
+    &.dark-orange {
+        border: 1px solid #c27048;
+        color: #c27048;
+    }
+    &.wine {
+        border: 1px solid #8a494d;
+        color: #8a494d;
+    }
+    &.light-green {
+        border: 1px solid #89b03f;
+        color: #89b03f;
+    }
+    &.dark-green {
+        border: 1px solid #3a5542;
+        color: #3a5542;
+    }
+}
+
 .bt {
     @include Flex-center-center($display: inline-flex);
+    vertical-align: middle;
     cursor: pointer;
     &.remove-value {
         @include Background($sprite: 'btn_attach_delete', $type: 'gif');
