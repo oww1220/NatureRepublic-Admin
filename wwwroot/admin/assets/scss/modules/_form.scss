@@ -428,12 +428,13 @@ select {
 }
 
 .radio-tab {
-    @include Flex-start-center;
+    @include Flex-start-center($display: inline-flex);
     > li {
         + li {
             margin-left: 5px;
         }
         input[type='radio'] {
+            @include HiddenTag;
             & + label {
                 border: 1px solid #ddd;
                 height: 33px;

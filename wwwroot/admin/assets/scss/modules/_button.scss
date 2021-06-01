@@ -178,6 +178,9 @@
     @include Flex-center-center($display: inline-flex);
     vertical-align: middle;
     cursor: pointer;
+    &:focus {
+        outline: none;
+    }
     &.remove-value {
         @include Background($sprite: 'btn_attach_delete', $type: 'gif');
         @include Hide_txt;
@@ -229,6 +232,24 @@
             border-color: #3c3e26;
             background-color: #3c3e26;
             color: #fff;
+        }
+    }
+    &.toggle {
+        color: #117ef9;
+        font-size: 14px;
+        &:after {
+            content: '';
+            display: block;
+            @include Background($sprite: 'ico-down-blue');
+            margin-left: 5px;
+            width: 10px;
+            height: 6px;
+            transition: transform 0.3s;
+        }
+        &.on {
+            &:after {
+                transform: rotate(180deg);
+            }
         }
     }
 }

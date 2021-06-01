@@ -90,8 +90,186 @@
             <!--//타이틀-->
 
             <div class="section-W">
-                
+
+                <div class="table-W type-search">
+                    <table>
+                        <colgroup>
+                            <col style="width:100px">
+                            <col style="width:auto">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>검색어</th>
+                                <td>
+                                    <select class="valign-t" id="" style="width:255px;">
+                                        <option value="">주문번호</option>
+                                        <option value="">주문번호1</option>
+                                        <option value="">주문번호2</option>
+                                    </select>
+                                    <div class="input-T valign-t ml-5" style="width: 395px;">
+                                        <div class="input-in">
+                                            <input type="text" id="txtStep1DateOff1" placeholder="검색어를 입력하세요"/>
+                                        </div>
+                                        <!--
+                                        <div class="guide-wrap">
+                                            <div class="error">
+                                                잘못된 입력 값입니다.
+                                            </div>
+                                        </div>-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>날짜</th>
+                                <td>
+                                    <select id="" style="width:255px;">
+                                        <option value="">주문번호</option>
+                                        <option value="">주문번호1</option>
+                                        <option value="">주문번호2</option>
+                                    </select>
+                                    <div class="datePicker-W ml-5">
+                                        <div class="ui-datePicker" style="width:186px;">
+                                            <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                        </div>
+                                        <span>~</span>
+                                        <div class="ui-datePicker" style="width:186px;">
+                                            <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                        </div>
+                                    </div>
+                                    <ul class="radio-tab ml-15">
+                                        <li>
+                                            <input id="radio06_01" type="radio" name="radio06" value="">
+                                            <label for="radio06_01">오늘</label>
+                                        </li>
+                                        <li>
+                                            <input id="radio06_02" type="radio" name="radio06" value="">
+                                            <label for="radio06_02">3일간</label>
+                                        </li>
+                                        <li>
+                                            <input id="radio06_03" type="radio" name="radio06" value="">
+                                            <label for="radio06_03">1주일</label>
+                                        </li>
+                                        <li>
+                                            <input id="radio06_04" type="radio" name="radio06" value="">
+                                            <label for="radio06_04">1개월</label>
+                                        </li>
+                                        <li>
+                                            <input id="radio06_05" type="radio" name="radio06" value="">
+                                            <label for="radio06_05">3개월</label>
+                                        </li>
+                                        <li>
+                                            <input id="radio06_06" type="radio" name="radio06" value="">
+                                            <label for="radio06_06">6개월</label>
+                                        </li>
+                                        <li>
+                                            <input id="radio06_07" type="radio" name="radio06" value="">
+                                            <label for="radio06_07">1년</label>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>카테고리</th>
+                                <td>
+                                    <select id="" style="width:200px;">
+                                        <option value="">1차 카테고리</option>
+                                        <option value="">1차 카테고리1</option>
+                                        <option value="">1차 카테고리2</option>
+                                    </select>
+                                    <select class="ml-5" id="" style="width:200px;">
+                                        <option value="">2차 카테고리</option>
+                                        <option value="">2차 카테고리1</option>
+                                        <option value="">2차 카테고리2</option>
+                                    </select>
+                                    <select class="ml-5" id="" style="width:200px;">
+                                        <option value="">3차 카테고리</option>
+                                        <option value="">3차 카테고리1</option>
+                                        <option value="">3차 카테고리2</option>
+                                    </select>
+                                    <select class="ml-5" id="" style="width:200px;">
+                                        <option value="">4차 카테고리</option>
+                                        <option value="">4차 카테고리1</option>
+                                        <option value="">4차 카테고리2</option>
+                                    </select>
+                                    <div class="inline-block ml-15">
+                                        <div class="input-C">
+                                            <input id="check_001" type="checkbox">
+                                            <label for="check_001">대표 카테고리</label>
+                                        </div>
+                                        <div class="input-C">
+                                            <input id="check_002" type="checkbox">
+                                            <label for="check_002">카테고리 미지정 상품</label>
+                                        </div>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-W type-search toggle-area">
+                    <table>
+                        <colgroup>
+                            <col style="width:100px">
+                            <col style="width:auto">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>주문구분</th>
+                                <td>
+                                    <div class="input-R">
+                                        <input type="radio" id="radio00_01" name="radio00" value="">
+                                        <label for="radio00_01">정상주문</label>
+                                    </div>
+                                    <div class="input-R">
+                                        <input type="radio" id="radio00_02" name="radio00" value="">
+                                        <label for="radio00_02">클레임주문</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>주문상태</th>
+                                <td>
+                                    <div class="input-C">
+                                        <input id="check_01" type="checkbox">
+                                        <label for="check_01">입금대기</label>
+                                    </div>
+                                    <div class="input-C">
+                                        <input id="check_02" type="checkbox">
+                                        <label for="check_02">결제완료</label>
+                                    </div>
+                                    <div class="input-C">
+                                        <input id="check_03" type="checkbox">
+                                        <label for="check_03">상품준비중</label>
+                                    </div>
+                                    <div class="input-C">
+                                        <input id="check_04" type="checkbox">
+                                        <label for="check_04">배송중</label>
+                                    </div>
+                                    <div class="input-C">
+                                        <input id="check_05" type="checkbox">
+                                        <label for="check_05">배송완료</label>
+                                    </div>
+                                    <div class="input-C">
+                                        <input id="check_06" type="checkbox">
+                                        <label for="check_06">구매확정</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <hr class="mt-20"/>
+                <div class="bt-W mt-30">
+                    <button type="button" class="bt normal">초기화</button>
+                    <button type="button" class="bt normal green">검색</button>
+                </div>
+
+                <button type="button" class="bt toggle" data-target="toggle-area" data-on="true">상세검색 펼침</button>
+
             </div>
+            
             
         </div>
 

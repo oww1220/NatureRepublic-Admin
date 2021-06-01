@@ -20,6 +20,9 @@ $(() => {
             $target.removeClass('on');
         }
     });
+    Event.toggle('.bt.toggle', null, (logic, layer) => {
+        logic();
+    });
 
     // test logic
     Event.toggle('.toggle_btn', '.toggle_cont', (logic, layer) => {

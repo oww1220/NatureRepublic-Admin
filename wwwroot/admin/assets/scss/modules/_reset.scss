@@ -158,8 +158,7 @@ textarea {
     outline: none;
 }
 caption,
-legend,
-hr {
+legend {
     display: none;
 }
 em,
@@ -259,6 +258,9 @@ textarea::placeholder {
 }
 .hidden {
     @include Hidden;
+}
+.inline-block {
+    @include Inline-block-config;
 }
 .align-c {
     text-align: center !important;

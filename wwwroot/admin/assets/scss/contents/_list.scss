@@ -35,7 +35,31 @@
 }
 
 .table-W {
-    &.row {
+    &.type-search {
+        table {
+            width: 100%;
+            th {
+                @include BreakWord;
+                @include Bold;
+                color: #333;
+                padding: 12px 0;
+                text-align: left;
+                line-height: 1.4;
+                font-size: 16px;
+                height: auto;
+                background-clip: padding-box;
+                vertical-align: middle;
+            }
+            td {
+                @include BreakWord;
+                background: #fff;
+                line-height: 1.4;
+                background-clip: padding-box;
+                vertical-align: middle;
+            }
+        }
+    }
+    &.type-row {
         table {
             width: 100%;
             border: 1px solid #dfdfdf;
@@ -56,6 +80,9 @@
                 background-clip: padding-box;
             }
         }
+    }
+    &.toggle-area {
+        display: none;
     }
 }
 
