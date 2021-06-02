@@ -65,7 +65,7 @@
             border: 1px solid #dfdfdf;
             th {
                 @include BreakWord;
-                color: #222;
+                color: #333;
                 padding: 16px 0 16px 20px;
                 text-align: left;
                 line-height: 1.4;
@@ -81,8 +81,117 @@
             }
         }
     }
+    &.type-normal {
+        table {
+            width: 100%;
+            border: 1px solid #ddd;
+            //table-layout: fixed;
+            border-top: 0;
+            th {
+                @include BreakWord;
+                color: #333;
+                border-top: 1px solid #ddd;
+                height: 64px;
+                vertical-align: middle;
+                text-align: center;
+                font-size: 16px;
+                background-color: #f9f9f9;
+            }
+            td {
+                @include BreakWord;
+                color: #58595b;
+                border-top: 1px solid #ddd;
+                text-align: center;
+                font-size: 14px;
+                padding: 20px 5px;
+                vertical-align: middle;
+            }
+        }
+    }
     &.toggle-area {
         display: none;
+    }
+    .table-sort {
+        overflow: hidden;
+        margin-bottom: 15px;
+        .sort-list {
+            @include Flex-start-center;
+            b {
+                @include Bold;
+                line-height: 1.2;
+                margin: 0 2px;
+            }
+            > strong {
+                font-size: 18px;
+                + ul {
+                    margin-left: 40px;
+                }
+            }
+            > ul {
+                @include Flex-start-center;
+                > li {
+                    @include Flex-center-center($display: inline-flex);
+                    font-size: 16px;
+                    line-height: 1.2;
+                    + li {
+                        &:before {
+                            display: block;
+                            content: '';
+                            width: 1px;
+                            height: 13px;
+                            background-color: #e7e7e7;
+                            margin: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .left-side {
+            float: left;
+            height: 40px;
+            @include Flex-start-end;
+            > * {
+                margin-right: 5px;
+            }
+        }
+        .right-side {
+            float: right;
+            > * {
+                margin-left: 5px;
+            }
+        }
+    }
+    .table-top {
+        overflow: hidden;
+        margin-bottom: 15px;
+        .left-side {
+            float: left;
+            > * {
+                margin-right: 5px;
+            }
+        }
+        .right-side {
+            float: right;
+            > * {
+                margin-left: 5px;
+            }
+        }
+    }
+    .table-bottom {
+        margin-top: 15px;
+        overflow: hidden;
+        .left-side {
+            float: left;
+            > * {
+                margin-right: 5px;
+            }
+        }
+        .right-side {
+            float: right;
+            > * {
+                margin-left: 5px;
+            }
+        }
     }
 }
 
