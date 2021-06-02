@@ -180,8 +180,6 @@ strong,
 b {
     font-weight: normal;
     color: #2b2b2b;
-    font-size: 15px;
-    line-height: 1;
     @include BreakWord;
 }
 p,
@@ -284,7 +282,6 @@ textarea::placeholder {
     margin-left: auto !important;
     margin-right: auto !important;
 }
-
 .txtBold {
     font-family: 'ManropeB', 'NotoB', serif !important;
     font-weight: normal !important;
@@ -292,6 +289,9 @@ textarea::placeholder {
 .txtNormal {
     font-family: 'ManropeL', 'NotoL', serif !important;
     font-weight: normal !important;
+}
+.txtLine {
+    text-decoration: underline;
 }
 .txtBlack {
     color: #2b2b2b !important;

@@ -34,6 +34,11 @@ $extra-small-devices: 320px;
 }
 
 /* flex layout */
+@mixin Flex-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @mixin Flex-config($display: flex, $justify: flex-start, $align: flex-start, $flow: row, $wrap: nowrap) {
     display: $display;
     justify-content: $justify;

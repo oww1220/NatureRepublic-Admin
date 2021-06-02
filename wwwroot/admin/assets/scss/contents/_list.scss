@@ -1,6 +1,6 @@
 .list-type {
     width: 100%;
-    @include Flex-start-start($wrap: wrap);
+    @include Flex-box;
     .list-in {
         .input-C,
         .input-R {
@@ -62,22 +62,27 @@
     &.type-row {
         table {
             width: 100%;
-            border: 1px solid #dfdfdf;
+            border-bottom: 1px solid #e7e7e7;
             th {
                 @include BreakWord;
                 color: #333;
-                padding: 16px 0 16px 20px;
+                padding: 20px 0 20px 23px;
                 text-align: left;
                 line-height: 1.4;
                 height: auto;
                 background-clip: padding-box;
+                background-color: #f9f9f9;
+                border-top: 1px solid #e7e7e7;
+                font-size: 16px;
             }
             td {
                 @include BreakWord;
-                padding: 9px 20px 9px 20px;
-                background: #fff;
+                color: #333;
+                padding: 11px 23px;
                 line-height: 1.4;
                 background-clip: padding-box;
+                border-top: 1px solid #e7e7e7;
+                font-size: 16px;
             }
         }
     }
@@ -147,51 +152,30 @@
             }
         }
         .left-side {
-            float: left;
             height: 40px;
             @include Flex-start-end;
-            > * {
-                margin-right: 5px;
-            }
-        }
-        .right-side {
-            float: right;
-            > * {
-                margin-left: 5px;
-            }
         }
     }
     .table-top {
         overflow: hidden;
         margin-bottom: 15px;
-        .left-side {
-            float: left;
-            > * {
-                margin-right: 5px;
-            }
-        }
-        .right-side {
-            float: right;
-            > * {
-                margin-left: 5px;
-            }
-        }
     }
     .table-bottom {
         margin-top: 15px;
         overflow: hidden;
-        .left-side {
-            float: left;
-            > * {
-                margin-right: 5px;
-            }
-        }
-        .right-side {
-            float: right;
-            > * {
-                margin-left: 5px;
-            }
-        }
+    }
+}
+
+.left-side {
+    float: left;
+    > * {
+        margin-right: 5px;
+    }
+}
+.right-side {
+    float: right;
+    > * {
+        margin-left: 5px;
     }
 }
 
@@ -211,6 +195,11 @@
             border-right: 1px solid #e7e7e7;
             border-bottom: 1px solid #e7e7e7;
             box-sizing: border-box;
+            &:hover {
+                border-color: #89b03f;
+                background-color: #89b03f;
+                color: #fff;
+            }
         }
         &:first-child {
             > a {
@@ -235,6 +224,11 @@
             color: #818286;
             font-size: 24px;
             line-height: 1.1;
+            border-bottom: 2px solid transparent;
+            &:hover {
+                color: #89b03f;
+                border-bottom: 2px solid #89b03f;
+            }
         }
         + li {
             &:before {
@@ -250,6 +244,80 @@
             > a {
                 color: #89b03f;
                 border-bottom: 2px solid #89b03f;
+            }
+        }
+    }
+}
+
+.box-W {
+    position: relative;
+    overflow: hidden;
+    &.between {
+        @include Flex-between-center;
+    }
+}
+
+.list-row {
+    @include Flex-start-center($display: inline-flex);
+    > li {
+        @include Flex-start-center;
+        + li {
+            margin-left: 80px;
+        }
+        > strong {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        .list-cont {
+            @include Flex-start-center;
+            font-size: 16px;
+            line-height: 1.4;
+            color: #58595b;
+            i {
+                margin-left: 5px;
+                + i {
+                    margin-left: 2px;
+                }
+            }
+            &:before {
+                display: block;
+                content: '';
+                width: 1px;
+                height: 15px;
+                background-color: #e7e7e7;
+                margin: 0 13px;
+            }
+        }
+    }
+}
+
+.list-box {
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 50px 10px;
+    > ul {
+        > li {
+            padding: 0 60px;
+            box-sizing: border-box;
+            + li {
+                border-left: 1px solid #e7e7e7;
+            }
+            .list-box-in {
+                @include Flex-between-center;
+                + .list-box-in {
+                    margin-top: 20px;
+                }
+                > strong {
+                    font-size: 18px;
+                }
+                > span {
+                    color: #6b8138;
+                    b {
+                        color: #6b8138;
+                        font-size: 18px;
+                        @include Bold;
+                    }
+                }
             }
         }
     }
