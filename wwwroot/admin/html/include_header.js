@@ -192,6 +192,12 @@ $(function(){
 		</div>
 	`;
 
+	var footer = `
+		<div class="footer">
+			<div class="text"><span class="txtGreen">© NATURE REPUBLIC</span>  Corp All Rights Reserved</div>
+		</div>
+	`;
+
     
     $('.sidebar-menu').html(header);
     $('.sidebar-menu .sidebar-menu').unwrap();
@@ -201,5 +207,8 @@ $(function(){
 
 	$('.path-W').html(pathW);
     $('.path-W .path-W').unwrap();
+
+	$('.footer').html(footer);
+    $('.footer .footer').unwrap();
 
 });
