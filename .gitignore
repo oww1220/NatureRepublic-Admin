@@ -111,6 +111,4 @@ dist
 /docs
 /build
 /wwwroot/admin/assets/scripts/build
-/wwwroot/admin/_lib
-/wwwroot/admin/images
 *.map
