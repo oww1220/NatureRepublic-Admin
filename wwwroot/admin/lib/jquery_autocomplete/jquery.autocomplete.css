@@ -35,7 +35,7 @@
 }
 
 .ac_loading {
-	background: white url('/_lib/jquery_autocomplete/indicator.gif') right center no-repeat;
+	background: white url('/lib/jquery_autocomplete/indicator.gif') right center no-repeat;
 }
 
 .ac_odd {

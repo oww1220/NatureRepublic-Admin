@@ -241,9 +241,9 @@ function number_format(num){
 var util = {
 	uploadifyInit: function( inputID, queueID, attachID, uptype, preImgID ) {
 		$('#'+inputID).uploadify({
-			'swf': '/_lib/uploadify/uploadify.swf',
-			'uploader': '/_lib/uploadify/uploadify.php',
-			'cancelImg':'/_lib/uploadify/uploadify-cancel.png',
+			'swf': '/lib/uploadify/uploadify.swf',
+			'uploader': '/lib/uploadify/uploadify.php',
+			'cancelImg':'/lib/uploadify/uploadify-cancel.png',
 			'formData': { "folder":"uploads" },
 			buttonText : '파일업로드',
 			width: 100,
@@ -498,8 +498,8 @@ var cfg1 = {
 	initializedId : "", /* 대부분의 경우에 빈문자열 */
 	wrapper : "tx_trex_container", /* 에디터를 둘러싸고 있는 레이어 이름(에디터 컨테이너) */
 	form : 'tx_editor_form' + "", /* 등록하기 위한 Form 이름 */
-	txIconPath : "/_lib/daumeditor/images/icon/editor/", /*에디터에 사용되는 이미지 디렉터리, 필요에 따라 수정한다. */
-	txDecoPath : "/_lib/daumeditor/images/deco/contents/", /*본문에 사용되는 이미지 디렉터리, 서비스에서 사용할 때는 완성된 컨텐츠로 배포되기 위해 절대경로로 수정한다. */
+	txIconPath : "/lib/daumeditor/images/icon/editor/", /*에디터에 사용되는 이미지 디렉터리, 필요에 따라 수정한다. */
+	txDecoPath : "/lib/daumeditor/images/deco/contents/", /*본문에 사용되는 이미지 디렉터리, 서비스에서 사용할 때는 완성된 컨텐츠로 배포되기 위해 절대경로로 수정한다. */
 	canvas : {
 		styles : {
 			color : "#123456", /* 기본 글자색 */
