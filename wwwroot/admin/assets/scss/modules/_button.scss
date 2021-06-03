@@ -93,6 +93,11 @@
         width: 11px;
         height: 13px;
     }
+    &.drawer {
+        @include Background($sprite: 'ico-drawer');
+        width: 16px;
+        height: 14px;
+    }
 }
 .opened {
     .head01 {

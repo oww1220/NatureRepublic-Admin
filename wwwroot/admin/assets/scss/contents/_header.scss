@@ -13,20 +13,22 @@
                 height: 98px;
                 @include Flex-start-center;
                 .logo {
-                    margin-left: 5px;
+                    margin-left: 10px;
                     a {
                         color: #fff;
                         letter-spacing: 0;
+                        font-size: 20px;
                     }
                 }
                 .sidebar-collapse {
                     float: left;
                     a {
                         border: none;
-                        .entypo-menu {
-                            &:before {
-                                color: #fff;
-                            }
+                        font-size: 20px;
+                        padding: 0;
+                        @include Flex-start-center;
+                        &:hover {
+                            background-color: transparent;
                         }
                     }
                 }
@@ -42,10 +44,27 @@
                     height: 60px;
                     @include Flex-start-center;
                     position: relative;
-                    &:before {
-                        @include Position($top: 20px, $right: 20px);
-                        transform: rotate(90deg);
-                        font-size: 20px;
+                }
+                &.has-sub {
+                    > a {
+                        &:before {
+                            @include Background($sprite: 'ico-lnb-down');
+                            @include Position($top: 27px, $right: 20px);
+                            content: '';
+                            //transform: rotate(90deg);
+                            font-size: 20px;
+                            width: 13px;
+                            height: 8px;
+                        }
+                    }
+                    &.opened {
+                        > a {
+                            &:before {
+                                @include Background($sprite: 'ico-lnb-down-on');
+                                transform: rotate(180deg);
+                                color: #aac33e;
+                            }
+                        }
                     }
                 }
                 ul {
@@ -73,10 +92,6 @@
                 &.opened {
                     > a {
                         color: #aac33e;
-                        &:before {
-                            transform: rotate(270deg);
-                            color: #aac33e;
-                        }
                     }
                 }
             }
