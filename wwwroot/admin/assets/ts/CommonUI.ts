@@ -99,8 +99,12 @@ namespace CommonUI {
 
             const layerH = $layer.height() || 0,
                 layerW = $layer.width() || 0,
-                marginH = parseInt(layerIn.css('marginTop')) + parseInt(layerIn.css('marginBottom'));
-            //console.log(layer, winH, winW, layerH, layerW, marginH);
+                popTopH = layerIn.find('.popup-top').height() || 0,
+                marginH =
+                    parseInt(layerIn.css('marginTop')) +
+                    parseInt(layerIn.css('marginBottom')) +
+                    parseInt(String(popTopH));
+            //console.log(layer, winH, winW, layerH, layerW, marginH, parseInt(String(popTopH)));
 
             if (winH < layerH) {
                 layerIn.find('.pop_scroll').css({

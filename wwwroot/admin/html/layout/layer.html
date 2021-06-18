@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Nature Republic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+
+    <meta name="robots" content="index,follow">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="기빙백포럼">
+    <meta property="og:description" content="기빙백포럼">
+    <meta property="og:image" content="http://www.gbforum.kr/images/common/logo.png">
+    <meta property="og:url" content="http://www.gbforum.kr">
+    <!--<meta name="naver-site-verification" content="441dc23a09829af3d3193f1ad7e0e29716e147cc" />-->
+    <meta name="description" content="기빙백포럼">
+    <link rel="canonical" href="">
+
+    <!--<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;900&display=swap" rel="stylesheet">-->
+    <!--[if lt IE 10]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../../lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../lib/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../lib/fileinput/css/fileinput.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="../../lib/fileinput/themes/explorer-fas/theme.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../lib/notification/notification.css" />
+    <link rel="stylesheet" type="text/css" href="../../lib/ews/entypo.css" />
+    <link rel="stylesheet" type="text/css" href="../../loadfile/files/cmm/admin.css">
+
+    <script type="text/javascript" src="../../lib/jquery/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../lib/jquery-ui/jquery-ui.min.js"></script>
+
+    <!--include-->
+    <script type="text/javascript" src="../include_header.js"></script>
+
+    <script type="text/javascript" src="../../lib/jquery/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../../lib/propper/js/propper.min.js"></script>
+    <script type="text/javascript" src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../lib/fileinput/js/plugins/piexif.js"></script>
+    <script type="text/javascript" src="../../lib/fileinput/js/plugins/sortable.js"></script>
+    <script type="text/javascript" src="../../lib/fileinput/js/fileinput.js"></script>
+    <script type="text/javascript" src="../../lib/fileinput/themes/fas/theme.js"></script>
+    <script type="text/javascript" src="../../lib/fileinput/themes/explorer-fas/theme.js"></script>
+    <script type="text/javascript" src="../../lib/jquery/jquery.mousescroll.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script type="text/javascript" src="../../lib/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <script type="text/javascript" src="../../lib/ews/ews.js"></script>
+    <script type="text/javascript" src="../../lib/ews/resizeable.js"></script>
+    <script type="text/javascript" src="../../lib/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../../loadfile/files/cmm/site_api.js"></script>
+    <script type="text/javascript" src="../../loadfile/files/cmm/site_custome.js"></script>
+    <script type="text/javascript" src="../../loadfile/files/cmm/site.js"></script>
+    <!-- mov -->
+    <script charset="utf-8" src="//cdn.iframe.ly/embed.js?api_key=2b0b6125101b04b09c8e26"></script>
+
+    <!--custom-->
+    <link rel="stylesheet" type="text/css" href="../../assets/styles/contents.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/styles/modules.css"/>
+    <script type="text/javascript" src="../../assets/scripts/bundle/vendors.chunk.js"></script>
+    <script type="text/javascript" src="../../assets/scripts/bundle/main.chunk.js"></script>
+
+
+</head>
+<body class="page-body">
+    <div class="page-container">
+
+        <!--사이드바-->
+        <div class="sidebar-menu">
+        </div>
+        <!--//사이드바-->
+
+        <div class="main-content">
+
+            <!--상단-->
+            <div class="header-top"></div>
+            <!--//상단-->
+            <!--경로-->
+            <div class="path-W"></div>
+            <!--//경로-->
+
+            <!--타이틀-->
+            <div class="title-W">
+                <h2>레이어 팝업 유형</h2>
+            </div>
+            <!--//타이틀-->
+
+            <div class="section-W">
+                
+                <button type="button" class="bt small" id="layer-001-open">layer-001 OPEN (360 size)</button>
+                <br/>
+                <br/>
+                <button type="button" class="bt small" id="layer-002-open">layer-002 OPEN (750 size)</button>
+                <br/>
+                <br/>
+                <button type="button" class="bt small" id="layer-003-open">layer-003 OPEN (960 size)</button>
+
+            </div>
+
+
+
+            
+            <!--후터-->
+            <div class="footer"></div>
+            <!--//후터-->
+
+
+            <!--레이어 본체-->
+            <div class="pop_layer layer-360 layer-001">
+                <div class="pop_inner">
+                    <button type="button" class="layer-close" data-layer="layer-001">닫기 버튼</button>
+                    <div class="popup-top">
+                        <h4>01. 기본 정보 / 회원 등급별할인 / 과세</h4>
+                    </div>
+                    <div class="pop_scroll">
+        
+                        <div class="pop_cont">
+                            
+                            <div class="table-W type-search">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:100px">
+                                        <col style="width:auto">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>정책선택</th>
+                                            <td>
+                                                <select id="" style="width: 100%;">
+                                                    <option value="">주문번호</option>
+                                                    <option value="">주문번호1</option>
+                                                    <option value="">주문번호2</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="bt-W mt-30">
+                                <button type="button" class="bt normal">취소</button>
+                                <button type="button" class="bt normal green">적용</button>
+                            </div>
+        
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--//레이어 본체-->
+
+            <!--레이어 본체-->
+            <div class="pop_layer layer-750 layer-002">
+                <div class="pop_inner">
+                    <button type="button" class="layer-close" data-layer="layer-002">닫기 버튼</button>
+                    <div class="popup-top">
+                        <h4>01. 기본 정보 / 회원 등급별할인 / 과세</h4>
+                    </div>
+                    <div class="pop_scroll">
+        
+                        <div class="pop_cont">
+                            
+                            <div class="table-W type-normal">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:13%">
+                                        <col style="width:17%">
+                                        <col style="width:70%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>변경항목</th>
+                                            <th>항목명</th>
+                                            <th>안내</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="input-C noTxt">
+                                                    <input id="check_01-1" type="checkbox" name="check_01"/>
+                                                    <label for="check_01-1"></label>
+                                                </div>
+                                            </td>
+                                            <td>상품명</td>
+                                            <td>
+                                                <div class="input-T" style="width: 90%;">
+                                                    <div class="input-in">
+                                                        <input type="text" id="part_name">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="input-C noTxt">
+                                                    <input id="check_01-2" type="checkbox" name="check_01"/>
+                                                    <label for="check_01-2"></label>
+                                                </div>
+                                            </td>
+                                            <td>검색어</td>
+                                            <td>
+                                                <div class="input-T" style="width: 90%;">
+                                                    <div class="input-in">
+                                                        <input type="text" id="part_name" placeholder="쉼표(,)로 구분"/>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="input-C noTxt">
+                                                    <input id="check_01-3" type="checkbox" name="check_01"/>
+                                                    <label for="check_01-3"></label>
+                                                </div>
+                                            </td>
+                                            <td>회원등급법 할인</td>
+                                            <td>
+                                                <select class="valign-t" id="" style="width: 90%;">
+                                                    <option value="">주문번호</option>
+                                                    <option value="">주문번호1</option>
+                                                    <option value="">주문번호2</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            
+
+                            <div class="bt-W mt-30">
+                                <button type="button" class="bt normal">취소</button>
+                                <button type="button" class="bt normal green">적용</button>
+                            </div>
+        
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--//레이어 본체-->
+
+            <!--레이어 본체-->
+            <div class="pop_layer layer-960 layer-003">
+                <div class="pop_inner">
+                    <button type="button" class="layer-close" data-layer="layer-003">닫기 버튼</button>
+                    <div class="popup-top">
+                        <h4>01. 기본 정보 / 회원 등급별할인 / 과세</h4>
+                    </div>
+                    <div class="pop_scroll">
+        
+                        <div class="pop_cont">
+                            
+
+                            <div class="title-W between mb-15">
+                                <h3>재입고 SNS발송</h3>
+                            </div>
+
+                            <div class="box-w">
+                                <div class="table-W type-search">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:100px">
+                                            <col style="width:auto">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>보내는 사람</th>
+                                                <td>
+                                                    010-1234-5678
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>날짜</th>
+                                                <td>
+                                                    <span class="txtBlue">1113</span>명 대상
+                                                    <div class="bt-W inline ml-30">
+                                                        <button type="button" class="bt small"><i class="ico search"></i>알림요청자검색</button>
+                                                        <button type="button" class="bt small"><i class="ico excel"></i>엑셀다운로드</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="guide-wrap mt-10">
+                                <div>- 받는 사람이 1,000명 이상 시 받는 사람을 엑셀로 다운로드 받아 <span class="txtBlue txtLine">대량 SMS 발송</span> 기능으로 메일을 보내주세요.</div>
+                                <div>- 받는 사람이 1,000명 이상 시 받는 사람을 엑셀로 다운로드 받아 대량 SMS 발송 기능으로 메일을 보내주세요.</div>
+                            </div>
+
+
+                            <div class="flex-grow grow3-1 mt-50">
+                                <div class="item">
+                                    <div class="title-W between mb-10">
+                                        <h4>내용</h4>
+                                        <div class="bt-W">
+                                            <button type="button" class="bt small">특수문자</button>
+                                            <button type="button" class="bt small">SMS 불러오기</button>
+                                        </div>
+                                    </div>
+                                    <div class="textarea-W">
+                                        <textarea cols="10" rows="3">가나다라 마바사</textarea>
+                                        <div class="textarea-guide"><span class="txtBlue">11</span> byte / 81 byte / 1건 차감</div>
+                                    </div>
+                                </div>
+                                <div class="item ml-10">
+                                    <div class="title-W between mb-10">
+                                        <h4>미리보기</h4>
+                                    </div>
+                                    <div class="textarea-W disable">
+                                        <textarea cols="10" rows="3">고객님께서 알림 요청하신 상품 상품고유값,상품명,옵션이 재입고되었습니다.</textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="title-W between mb-15 mt-50">
+                                <h4>치환코드 설정</h4>
+                            </div>
+                            <div class="box-w">
+                                <div class="table-W type-search">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:100px">
+                                            <col style="width:auto">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>상품명 길이</th>
+                                                <td>
+                                                    <select id="" style="width: 260px;">
+                                                        <option value="">상품명 길이</option>
+                                                        <option value="">제한없음</option>
+                                                        <option value="">100</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>상품옵션 길이</th>
+                                                <td>
+                                                    <select class="valign-t" id="" style="width: 260px;">
+                                                        <option value="">주문번호</option>
+                                                        <option value="">주문번호1</option>
+                                                        <option value="">주문번호2</option>
+                                                    </select>
+                                                    <div class="input-T ml-5" style="width: 100px;">
+                                                        <div class="input-in">
+                                                            <input type="text" id="part_name">
+                                                        </div>
+                                                    </div>
+                                                    <span>자</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>상품URL</th>
+                                                <td>
+                                                    <div class="input-R">
+                                                        <input type="radio" id="radio00_01" name="radio00" value="" checked="checked"/>
+                                                        <label for="radio00_01">전체URL사용</label>
+                                                    </div>
+                                                    <div class="input-R">
+                                                        <input type="radio" id="radio00_02" name="radio00" value=""/>
+                                                        <label for="radio00_02">단축URL사용</label>
+                                                    </div>
+
+                                                    <button type="button" class="bt txtBlue">설정하기 ></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+
+                            <div class="title-W between mb-15 mt-50">
+                                <h4>발송시간</h4>
+                            </div>
+                            <div class="box-w">
+                                <div class="table-W type-search">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:100px">
+                                            <col style="width:auto">
+                                        </colgroup>
+                                        <tbody>
+
+                                            <tr>
+                                                <th>발송시간 설정</th>
+                                                <td>
+                                                    <div class="input-R">
+                                                        <input type="radio" id="radio01_01" name="radio01" value="" checked="checked"/>
+                                                        <label for="radio01_01">즉시</label>
+                                                    </div>
+                                                    <div class="input-R">
+                                                        <input type="radio" id="radio01_02" name="radio01" value=""/>
+                                                        <label for="radio01_02">시간예약</label>
+                                                    </div>
+
+                                                    <div class="inline-block">
+                                                        <div class="ui-datePicker" style="width:200px;">
+                                                            <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                                        </div>
+                                                        <select class="ml-5" id="" style="width: 100px;">
+                                                            <option value="">시</option>
+                                                            <option value="">10시</option>
+                                                            <option value="">11시</option>
+                                                        </select>
+                                                        <select class="ml-5" id="" style="width: 100px;">
+                                                            <option value="">분</option>
+                                                            <option value="">10분</option>
+                                                            <option value="">20분</option>
+                                                        </select>
+                                                    </div>
+
+                                                    
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="guide-wrap mt-10">
+                                <div>- 예약 발송 선택 후 현재보다 이전 시간으로 설정하시는 경우 SMS는 즉시 발송 됩니다.</div>
+                            </div>
+
+
+                            <div class="table-W type-normal mt-50">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:13%">
+                                        <col style="width:17%">
+                                        <col style="width:70%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>변경항목</th>
+                                            <th>항목명</th>
+                                            <th>안내</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="input-C noTxt">
+                                                    <input id="check_00-1" type="checkbox" name="check_00"/>
+                                                    <label for="check_00-1"></label>
+                                                </div>
+                                            </td>
+                                            <td>상품명</td>
+                                            <td>
+                                                <div class="input-T" style="width: 90%;">
+                                                    <div class="input-in">
+                                                        <input type="text" id="part_name">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="input-C noTxt">
+                                                    <input id="check_00-2" type="checkbox" name="check_00"/>
+                                                    <label for="check_00-2"></label>
+                                                </div>
+                                            </td>
+                                            <td>검색어</td>
+                                            <td>
+                                                <div class="input-T" style="width: 90%;">
+                                                    <div class="input-in">
+                                                        <input type="text" id="part_name" placeholder="쉼표(,)로 구분"/>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="input-C noTxt">
+                                                    <input id="check_00-3" type="checkbox" name="check_00"/>
+                                                    <label for="check_00-3"></label>
+                                                </div>
+                                            </td>
+                                            <td>회원등급법 할인</td>
+                                            <td>
+                                                <select class="valign-t" id="" style="width: 90%;">
+                                                    <option value="">주문번호</option>
+                                                    <option value="">주문번호1</option>
+                                                    <option value="">주문번호2</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+
+                            <div class="bt-W mt-30">
+                                <button type="button" class="bt normal">취소</button>
+                                <button type="button" class="bt normal green">적용</button>
+                            </div>
+        
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--//레이어 본체-->
+
+
+            <!--레이어 배경-->
+            <div class="layer_dimmed">레이어 배경</div>
+            <!--//레이어 배경-->
+
+
+            <script>
+            $(function(){
+                var LAYER_DIM = '.layer_dimmed';
+                var LAYER_PARENT = '.pop_layer';
+
+                //layer-001레이어 이벤트   
+                $(document).on('click', '#layer-001-open', function () {
+                    CommonUI.Layer.open('.layer-001', LAYER_DIM, LAYER_PARENT, function() {
+                        //console.log('open');
+                    });
+                });
+                $(document).on('click', '.layer-001 .layer-close', function () {
+                    CommonUI.Layer.close('.layer-001', LAYER_DIM, LAYER_PARENT, function(){
+                        //console.log('close');
+                    });
+                });
+
+                //layer-002레이어 이벤트   
+                $(document).on('click', '#layer-002-open', function () {
+                    CommonUI.Layer.open('.layer-002', LAYER_DIM, LAYER_PARENT, function(){
+                        //console.log('open');
+                    });
+                });
+                $(document).on('click', '.layer-002 .layer-close', function () {
+                    CommonUI.Layer.close('.layer-002', LAYER_DIM, LAYER_PARENT, function(){
+                        //console.log('close');
+                    });
+                });
+
+                //layer-003레이어 이벤트   
+                $(document).on('click', '#layer-003-open', function () {
+                    CommonUI.Layer.open('.layer-003', LAYER_DIM, LAYER_PARENT, function(){
+                        //console.log('open');
+                    });
+                });
+                $(document).on('click', '.layer-003 .layer-close', function () {
+                    CommonUI.Layer.close('.layer-003', LAYER_DIM, LAYER_PARENT, function(){
+                        //console.log('close');
+                    });
+                });
+
+
+                //비동기 호출후 레이어 높이 재 계산 메소드
+                //CommonUI.layer.calculate('.layer-001');
+                //CommonUI.layer.calculate('.layer-002');
+                //CommonUI.layer.calculate('.layer-003');
+
+
+
+            });
+            </script>
+
+
+        </div>
+
+    </div>
+</body>
+</html>

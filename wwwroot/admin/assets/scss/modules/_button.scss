@@ -98,6 +98,11 @@
         width: 16px;
         height: 14px;
     }
+    &.search {
+        @include Background($sprite: 'ico-search', $size: 100%);
+        width: 15px;
+        height: 15px;
+    }
 }
 .opened {
     .head01 {
@@ -273,5 +278,12 @@
     @include Flex-center-center;
     .bt + .bt {
         margin-left: 10px;
+    }
+    &.inline {
+        display: inline-flex;
+        vertical-align: middle;
+        .bt + .bt {
+            margin-left: 5px;
+        }
     }
 }

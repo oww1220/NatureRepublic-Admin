@@ -273,21 +273,28 @@ select {
 }
 
 .textarea-W {
+    position: relative;
     width: 100%;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 20px 20px 25px;
+    border-radius: 3px;
     textarea {
         @include CustumScroll($minus: 5px);
         width: 100%;
         line-height: 1.5;
-        box-sizing: border-box;
-        padding: 13px 18px;
-        border: 1px solid #ddd;
         resize: none;
         font-size: 14px;
-        border-radius: 3px;
-        &:disabled {
-            background: #efefef;
-            color: #666;
-        }
+    }
+    &.disable {
+        background: #efefef;
+        color: #666;
+        pointer-events: none;
+    }
+    .textarea-guide {
+        @include Position($bottom: 5px, $left: 20px);
+        color: #58595b;
+        font-size: 14px;
     }
 }
 

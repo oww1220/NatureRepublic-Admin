@@ -1,7 +1,3 @@
-$medium-devices: 768px;
-$small-devices: 480px;
-$extra-small-devices: 320px;
-
 @mixin Clear {
     &:after {
         content: '';
@@ -26,14 +22,14 @@ $extra-small-devices: 320px;
     }
 }
 
-/* inline-block layout */
+// inline-block layout
 @mixin Inline-block-config($vertical: middle, $text: left) {
     display: inline-block;
     vertical-align: $vertical;
     text-align: $text;
 }
 
-/* flex layout */
+// flex layout
 @mixin Flex-box {
     display: flex;
     flex-wrap: wrap;
@@ -97,7 +93,7 @@ $extra-small-devices: 320px;
     @include Flex-config($justify: space-around, $align: flex-end, $display: $display, $wrap: $wrap, $flow: $flow);
 }
 
-/*인라인 가로스크롤*/
+// 인라인 가로스크롤
 @mixin Inline-scrolling {
     box-sizing: border-box;
     font-size: 0;
@@ -123,7 +119,7 @@ $extra-small-devices: 320px;
     }
 }
 
-/*폰트만 삭제시킴*/
+// 폰트만 삭제시킴
 @mixin Hide_txt {
     font: 0/0 a;
 }
@@ -139,7 +135,7 @@ $extra-small-devices: 320px;
     word-wrap: break-word;
 }
 
-/*요소 날림*/
+// 요소 날림
 @mixin HiddenTag {
     overflow: hidden;
     position: absolute;
@@ -154,14 +150,14 @@ $extra-small-devices: 320px;
     visibility: hidden;
 }
 
-/*투명도 믹스인*/
+// 투명도 믹스인
 @mixin Opacity($opacity) {
     opacity: $opacity; /* All modern browsers */
     $opacityIE: $opacity * 100;
     filter: alpha(opacity=$opacityIE); /* For IE5~IE9 */
 }
 
-/*포지션 믹스인*/
+// 포지션 믹스인
 //@include Position($top: 0, $left: 0)
 @mixin Position($position: absolute, $top: null, $right: null, $bottom: null, $left: null) {
     position: $position;
@@ -171,7 +167,7 @@ $extra-small-devices: 320px;
     left: $left;
 }
 
-/*백그라운드 믹스인*/
+// 백그라운드 믹스인
 //@include Background($sprite:'error', $type:'png', $position:right center); ---  사용법
 //@include Background($sprite:'error', $type:'jpg'); ---  사용법
 //@include Background($sprite:'error', $type:'jpg', $position:20% 20%, $size:100%); ---  사용법
@@ -182,7 +178,7 @@ $extra-small-devices: 320px;
     background-size: $size;
 }
 
-/* 말줄임표 */
+// 말줄임표
 // 인자 값의 기본 값은 1
 // @include Ellipsis($w:100px, $lines:2); --- 사용법
 @mixin Ellipsis($w: 100%, $lines: 1, $display: block) {
@@ -244,7 +240,7 @@ $extra-small-devices: 320px;
     }
 }
 
-/*리셋*/
+// 리셋
 @mixin ResetStyle($style, $symbol, $pc: true) {
     @if $pc {
         .#{$symbol}-0 {
@@ -317,7 +313,7 @@ $extra-small-devices: 320px;
     }
 }
 
-/*미디어쿼리 믹스인*/
+// 미디어쿼리 믹스인
 //@include media( $queryPoint: "(max-width:480px)" ){
 //width : 50%;
 //}

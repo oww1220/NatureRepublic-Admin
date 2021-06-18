@@ -43,7 +43,7 @@
     }
     h4 {
         @include Bold;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.4;
     }
     &.between {
@@ -55,6 +55,55 @@
     padding: 40px;
     background-color: #fff;
     margin-top: 20px;
+}
+
+.box-w {
+    background-color: #fff;
+    padding: 15px 35px;
+    border: 1px solid #e7e7e7;
+}
+
+.flex-grow {
+    display: flex;
+    &.grow3-1 {
+        .item {
+            flex-grow: 3;
+            + .item {
+                flex-grow: 1;
+            }
+        }
+    }
+    &.grow2-1 {
+        .item {
+            flex-grow: 2;
+            + .item {
+                flex-grow: 1;
+            }
+        }
+    }
+    .title-W {
+        min-height: 34px;
+    }
+}
+
+.flex-shrink {
+    display: flex;
+    &.shrink3-1 {
+        .item {
+            flex-shrink: 3;
+            + .item {
+                flex-shrink: 1;
+            }
+        }
+    }
+    &.shrink2-1 {
+        .item {
+            flex-shrink: 2;
+            + .item {
+                flex-shrink: 1;
+            }
+        }
+    }
 }
 
 .footer {
