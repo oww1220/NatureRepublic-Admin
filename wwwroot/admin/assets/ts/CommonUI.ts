@@ -89,7 +89,7 @@ namespace CommonUI {
     };
     export const Layer = {
         scrollTop: 0,
-        calculate(layer: string) {
+        calculate(layer: string, widthValue?: string) {
             const $layer = $(layer),
                 layerIn = $layer.find('.pop_inner'),
                 winH = $(window).height() || 0,
@@ -105,6 +105,8 @@ namespace CommonUI {
                     parseInt(layerIn.css('marginBottom')) +
                     parseInt(String(popTopH));
             //console.log(layer, winH, winW, layerH, layerW, marginH, parseInt(String(popTopH)));
+
+            if (widthValue) $layer.css({ width: widthValue, opacity: 0 });
 
             if (winH < layerH) {
                 layerIn.find('.pop_scroll').css({
@@ -148,7 +150,7 @@ namespace CommonUI {
                 e.preventDefault();
             });
         },
-        open(layer: string, dimmed: string, parent: string, callback?: (layer: string) => void) {
+        open(layer: string, dimmed: string, parent: string, callback?: (layer: string) => void, widthValue?: string) {
             const that = this;
             that.scrollTop = $(window).scrollTop() || 0;
             $('body').addClass('fixed');
@@ -156,7 +158,7 @@ namespace CommonUI {
             if (dimmed) $(dimmed).fadeIn();
             if (callback) callback(layer);
             $(parent + layer).show();
-            that.calculate(layer);
+            that.calculate(layer, widthValue);
             $(window).on('resize.layer', function () {
                 that.calculate(layer);
             });
