@@ -3,6 +3,9 @@
     .main-content {
         background-color: #e9eaed;
     }
+    &.noMinwidth {
+        min-width: initial;
+    }
 }
 
 .path-W {
