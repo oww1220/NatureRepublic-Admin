@@ -87,6 +87,36 @@ input[type='tel'] {
         @include Position($top: 50%, $right: 5px);
         margin-top: -7px;
     }
+
+    &.big {
+        input {
+            height: 90px;
+            font-size: 22px;
+        }
+        .guide-wrap {
+            > div {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &.lineOne {
+        input {
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+
+    &.innerBt {
+        input {
+            padding-right: 150px;
+        }
+        .bt {
+            @include Position($top: 25px, $right: 20px);
+        }
+    }
 }
 
 .ui-datePicker {
@@ -211,7 +241,7 @@ select {
             text-align: left;
             cursor: pointer;
             min-height: 20px;
-            color: #666;
+            color: #333;
             &:before {
                 display: block;
                 content: '';
@@ -238,6 +268,25 @@ select {
             padding-left: 20px;
         }
     }
+    &.big {
+        input[type='checkbox'] {
+            & + label {
+                font-size: 17px;
+                padding-left: 39px;
+                line-height: 31px;
+                &:before {
+                    @include Background($sprite: 'icon_check_big_off');
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            &:checked + label {
+                &:before {
+                    @include Background($sprite: 'icon_check_big_on');
+                }
+            }
+        }
+    }
 }
 
 .input-R {
@@ -254,7 +303,7 @@ select {
             text-align: left;
             cursor: pointer;
             min-height: 20px;
-            color: #666;
+            color: #333;
             &:before {
                 display: block;
                 content: '';

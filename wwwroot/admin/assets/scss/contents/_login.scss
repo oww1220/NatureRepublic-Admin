@@ -1,0 +1,94 @@
+.login-content {
+    @include Background($sprite: 'login-bg', $type: 'jpg', $path: 'bgs', $size: cover);
+    @include Flex-center-center($flow: column);
+    height: 100%;
+    .login-W {
+        @include Background($sprite: 'login-bg', $path: 'bgs', $repeat: repeat);
+        @include Flex-center-center;
+        width: 820px;
+        padding: 90px 0;
+        margin: 40px 0;
+        border-radius: 80px;
+        .login-inner {
+            @include Flex-center-center($flow: column);
+        }
+        .login-form {
+            width: 600px;
+        }
+        .login-input {
+            .input-T {
+                .input-in {
+                    position: relative;
+                }
+                input {
+                    border-radius: 20px;
+                    padding-left: 120px;
+                }
+                + .input-T {
+                    margin-top: 20px;
+                }
+            }
+            .input-icon {
+                @include Position($top: 27px, $left: 30px);
+                @include Flex-start-center;
+                &::after {
+                    display: block;
+                    content: '';
+                    width: 1px;
+                    height: 30px;
+                    background-color: #ddd;
+                    margin-left: 30px;
+                }
+            }
+        }
+        .tab_nav {
+            position: relative;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 20px;
+            > ul {
+                > li {
+                    a {
+                        @include Flex-center-center;
+                        height: 70px;
+                        color: #bcbdc1;
+                        font-size: 22px;
+                    }
+                    &.on {
+                        a {
+                            color: #333333;
+                        }
+                    }
+                }
+            }
+            &:after {
+                display: block;
+                content: '';
+                width: 50%;
+                height: 70px;
+                pointer-events: none;
+                border: 1px solid #333;
+                cursor: pointer;
+                border-radius: 20px;
+                @include Position($top: 0, $left: 0);
+                transform: translateX(0);
+                transition: transform 0.5s;
+            }
+            &.even {
+                &::after {
+                    transform: translateX(300px);
+                }
+            }
+        }
+        .tab_cont {
+        }
+    }
+    .login-bottom {
+        margin-bottom: 80px;
+        .text {
+            font-size: 14px;
+            color: #818286;
+            letter-spacing: 0;
+        }
+    }
+}
