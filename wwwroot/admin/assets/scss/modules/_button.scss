@@ -113,6 +113,11 @@
         width: 33px;
         height: 33px;
     }
+    &.delete {
+        @include Background($sprite: 'icon_delete', $size: auto, $position: center center);
+        width: 15px;
+        height: 15px;
+    }
 }
 .opened {
     .head01 {
@@ -285,7 +290,7 @@
     &.toggle {
         color: #117ef9;
         font-size: 14px;
-        &:after {
+        &::after {
             content: '';
             display: block;
             @include Background($sprite: 'ico-down-blue');
@@ -295,8 +300,18 @@
             transition: transform 0.3s;
         }
         &.on {
-            &:after {
+            &::after {
                 transform: rotate(180deg);
+            }
+        }
+        &.txt {
+            &::before {
+                content: '열림';
+            }
+            &.on {
+                &::before {
+                    content: '닫힘';
+                }
             }
         }
     }

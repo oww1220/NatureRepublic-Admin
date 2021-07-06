@@ -35,22 +35,40 @@
 
 .title-W {
     h2 {
+        @include Flex-start-end;
+        align-items: baseline;
         @include Bold;
         font-size: 32px;
         line-height: 1.4;
     }
     h3 {
+        @include Flex-start-end;
+        align-items: baseline;
         @include Bold;
         font-size: 24px;
         line-height: 1.4;
     }
     h4 {
+        @include Flex-start-end;
+        align-items: baseline;
         @include Bold;
         font-size: 18px;
         line-height: 1.4;
     }
     &.between {
         @include Flex-between-center;
+    }
+    .sub-tit {
+        @include Flex-start-center;
+        @include Normal;
+        span {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        button {
+            font-size: 14px;
+            line-height: 1.4;
+        }
     }
 }
 

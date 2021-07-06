@@ -5,3 +5,46 @@
         padding-left: 0;
     }
 }
+
+.catagory-box {
+    @include Flex-start-start;
+    .catagory-box-item {
+        flex-basis: 25%;
+        h5 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .catagory-box-list {
+            margin-right: 20px;
+            border: 1px solid #eee;
+            height: 160px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            > ul {
+                padding: 15px 0;
+                > li {
+                    a {
+                        display: block;
+                        font-size: 14px;
+                        color: #58595b;
+                        padding: 3px 15px;
+                        &:hover {
+                            background-color: #e7efd9;
+                        }
+                    }
+                    span {
+                        display: block;
+                        font-size: 14px;
+                        color: #58595b;
+                        padding: 3px 15px;
+                    }
+                    &.active {
+                        a {
+                            background-color: #e7efd9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
