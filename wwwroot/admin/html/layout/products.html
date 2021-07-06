@@ -64,6 +64,10 @@
     <script type="text/javascript" src="../../assets/scripts/bundle/vendors.chunk.js"></script>
     <script type="text/javascript" src="../../assets/scripts/bundle/main.chunk.js"></script>
 
+    <!-- timepicker -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+
 
 </head>
 <body class="page-body">
@@ -448,12 +452,18 @@
                                                         <th>자동 전시 기간</th>
                                                         <td>
                                                             <div class="datePicker-W">
-                                                                <div class="ui-datePicker" style="width:200px;">
+                                                                <div class="ui-datePicker" style="width:190px;">
                                                                     <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
                                                                 </div>
+                                                                <div class="ui-timePicker ml-5" style="width:190px;">
+                                                                    <input type="text" name="time01"/>
+                                                                </div>
                                                                 <span>~</span>
-                                                                <div class="ui-datePicker" style="width:200px;">
+                                                                <div class="ui-datePicker" style="width:190px;">
                                                                     <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                                                </div>
+                                                                <div class="ui-timePicker ml-5" style="width:190px;">
+                                                                    <input type="text" name="time01"/>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -534,5 +544,14 @@
         </div>
 
     </div>
+
+    <script>
+        $(function(){
+            $('.ui-timePicker input').timepicker({
+                interval: 20,
+            });
+        });
+    </script>
+
 </body>
 </html>
