@@ -95,7 +95,7 @@
                     <h3>
                         카테고리연결
                         <div class="sub-tit ml-15">
-                            <span>신규 카테고리 생성은 <spna class="txtBlue">판매 상품 > 카테고리 관리</spna> 에서 가능 합니다.</span>
+                            <span>신규 카테고리 생성은 <span class="txtBlue">판매 상품 > 카테고리 관리</span> 에서 가능 합니다.</span>
                             <button type="button" class="bt txtRed txtLine ml-10">카테고리 등록하기 &gt;</button>
                         </div>
                     </h3>
@@ -236,68 +236,281 @@
                         <button type="button" class="bt toggle txt" data-target="toggle-area3" data-on="true"></button>
                     </div>
                 </div>
-                <div class="box-W box-toggle toggle-area3">
-                    <div class="table-W type-normal">
+                <div class="box-W box-toggle toggle-area3" style="display: none;">
+                    <div class="table-W type-normal th-color-gray">
                         <table>
                             <colgroup>
                                 <col style="width:13%">
-                                <col style="width:17%">
                                 <col style="width:70%">
+                                <col style="width:17%">
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th>변경항목</th>
-                                    <th>항목명</th>
-                                    <th>안내</th>
+                                    <th>대표브랜드</th>
+                                    <th>브랜드</th>
+                                    <th>삭제</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
-                                        <div class="input-C noTxt">
-                                            <input id="check_00-1" type="checkbox" name="check_00">
-                                            <label for="check_00-1"></label>
+                                        <div class="input-R noTxt">
+                                            <input type="radio" id="radio00_01" name="radio00" value="">
+                                            <label for="radio00_01"></label>
                                         </div>
                                     </td>
-                                    <td>상품명</td>
+                                    <td class="align-l pl-30">스킨케어 > 로션</td>
                                     <td>
-                                        <div class="input-T" style="width: 90%;">
-                                            <div class="input-in">
-                                                <input type="text" id="part_name">
-                                            </div>
-                                        </div>
+                                        <button type="button" class="bt small"><i class="ico minus"></i>삭제</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="input-C noTxt">
-                                            <input id="check_00-2" type="checkbox" name="check_00">
-                                            <label for="check_00-2"></label>
+                                        <div class="input-R noTxt">
+                                            <input type="radio" id="radio00_02" name="radio00" value="">
+                                            <label for="radio00_02"></label>
                                         </div>
                                     </td>
-                                    <td>검색어</td>
+                                    <td class="align-l pl-30">스킨케어 > 로션 > 3Depth</td>
                                     <td>
-                                        <div class="input-T" style="width: 90%;">
-                                            <div class="input-in">
-                                                <input type="text" id="part_name" placeholder="쉼표(,)로 구분">
-                                            </div>
-                                        </div>
+                                        <button type="button" class="bt small"><i class="ico minus"></i>삭제</button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="input-C noTxt">
-                                            <input id="check_00-3" type="checkbox" name="check_00">
-                                            <label for="check_00-3"></label>
+                                        <div class="input-R noTxt">
+                                            <input type="radio" id="radio00_03" name="radio00" value="">
+                                            <label for="radio00_03"></label>
                                         </div>
                                     </td>
-                                    <td>회원등급법 할인</td>
+                                    <td class="align-l pl-30">스킨케어 > 로션</td>
                                     <td>
-                                        <select class="valign-t" id="" style="width: 90%;">
-                                            <option value="">주문번호</option>
-                                            <option value="">주문번호1</option>
-                                            <option value="">주문번호2</option>
-                                        </select>
+                                        <button type="button" class="bt small"><i class="ico minus"></i>삭제</button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bt-W mt-30 mb-20">
+                        <button type="button" class="bt normal">최근 연결 브랜드</button>
+                        <button type="button" class="bt normal green">브랜드연결</button>
+                    </div>
+                </div>
+
+                <div class="title-W between mt-50 mb-15">
+                    <h3>
+                        판매정보
+                        <div class="sub-tit ml-15">
+                            <span>통합 설정은 <span class="txtBlue">설정 > 주문</span> 에서 변경할 수 있습니다.</span>
+                            <button type="button" class="bt txtRed txtLine ml-10">주문하기 &gt;</button>
+                        </div>
+                    </h3>
+                </div>
+                <div class="box-W">
+                    <div class="table-W type-row">
+                        <table>
+                            <colgroup>
+                                <col style="width:200px">
+                                <col style="">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>상품구성</th>
+                                    <td>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio02_01" name="radio02" value="">
+                                            <label for="radio02_01">단일</label>
+                                        </div>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio02_02" name="radio02" value="">
+                                            <label for="radio02_02">세트</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>판매상태</th>
+                                    <td>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio03_01" name="radio03" value="">
+                                            <label for="radio03_01">전시</label>
+                                        </div>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio03_02" name="radio03" value="">
+                                            <label for="radio03_02">비전시</label>
+                                        </div>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio03_03" name="radio03" value="">
+                                            <label for="radio03_03">전시예약</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>상품구성</th>
+                                    <td>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio04_01" name="radio04" value="">
+                                            <label for="radio04_01">정상</label>
+                                        </div>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio04_02" name="radio04" value="">
+                                            <label for="radio04_02">품절</label>
+                                        </div>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio04_03" name="radio04" value="">
+                                            <label for="radio04_03">판매중지</label>
+                                        </div>
+                                        <div class="input-C">
+                                            <input id="check_01" type="checkbox">
+                                            <label for="check_01">품절시 재입고 알림사용</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>전시상태</th>
+                                    <td>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio05_01" name="radio05" value="">
+                                            <label for="radio05_01">통합설정 사용</label>
+                                        </div>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio05_02" name="radio05" value="">
+                                            <label for="radio05_02">개별설정 사용</label>
+                                        </div>
+                                        <button type="button" class="bt small">설정</button>
+                                        <span class="txtGray">(재고무관 판매)</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="title-W between mt-50 mb-15">
+                    <h3>
+                        판매정보
+                        <div class="sub-tit ml-15">
+                            <span>통합 설정은 <span class="txtBlue">설정 > 주문</span> 에서 변경할 수 있습니다.</span>
+                            <button type="button" class="bt txtRed txtLine ml-10">주문하기 &gt;</button>
+                        </div>
+                    </h3>
+                </div>
+                <div class="box-W">
+                    <div class="table-W type-row">
+                        <table>
+                            <colgroup>
+                                <col style="width:200px">
+                                <col style="">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>옵션갯수</th>
+                                    <td>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio06_01" name="radio06" value="">
+                                            <label for="radio06_01">단일</label>
+                                        </div>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio06_02" name="radio06" value="">
+                                            <label for="radio06_02">세트</label>
+                                        </div>
+                                        <button type="button" class="bt small black">적용</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>전시상태</th>
+                                    <td>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio07_01" name="radio07" value="">
+                                            <label for="radio07_01">전시</label>
+                                        </div>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio07_02" name="radio07" value="">
+                                            <label for="radio07_02">비전시</label>
+                                        </div>
+                                        <div class="input-R">
+                                            <input type="radio" id="radio07_03" name="radio07" value="">
+                                            <label for="radio07_03">전시예약</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>전시예약</th>
+                                    <td>
+                                        <div class="table-W type-row">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:200px">
+                                                    <col style="">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>자동 전시 기간</th>
+                                                        <td>
+                                                            <div class="datePicker-W">
+                                                                <div class="ui-datePicker" style="width:200px;">
+                                                                    <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                                                </div>
+                                                                <span>~</span>
+                                                                <div class="ui-datePicker" style="width:200px;">
+                                                                    <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>기간 외 전시 설정</th>
+                                                        <td>
+                                                            <div class="input-C">
+                                                                <input id="check_02" type="checkbox">
+                                                                <label for="check_02">기간 이전 전시</label>
+                                                            </div>
+                                                            <div class="input-C">
+                                                                <input id="check_03" type="checkbox">
+                                                                <label for="check_03">기간 이후 전시 유지</label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>상품명 머리말</th>
+                                                        <td>
+                                                            <div class="input-T" style="width: 395px;">
+                                                                <div class="input-in">
+                                                                    <input type="text" id="" placeholder="상품명 머리말을 입력하세요">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>예약상품</th>
+                                                        <td>
+                                                            <div>
+                                                                <div class="input-C">
+                                                                    <input id="check_04" type="checkbox">
+                                                                    <label for="check_04">예약 발송 상품</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mt-5">
+                                                                <span>예약 발송일</span>
+                                                                <div class="ui-datePicker ml-20" style="width:200px;">
+                                                                    <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                                                </div>
+                                                                <span class="txtGray ml-5">※ 예약 상품은 배송 그룹을 별도 생성 후 연결하는 것을 권장 드립니다.</span>
+                                                            </div>
+                                                            <div class="mt-5">
+                                                                <span>발송안내 문구</span>
+                                                                <span class="txtGray ml-20">설정 예약 발송일</span>
+                                                                <div class="input-T ml-5" style="width: 235px;">
+                                                                    <div class="input-in">
+                                                                        <input type="text" id="" placeholder="설정 예약 발송일 입력"/>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </td>
                                 </tr>
 
@@ -313,439 +526,7 @@
 
 
 
-            <div class="section-W">
-
-                <div class="table-W type-search">
-                    <table>
-                        <colgroup>
-                            <col style="width:100px">
-                            <col style="width:auto">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th>검색어</th>
-                                <td>
-                                    <select class="valign-t" id="" style="width:255px;">
-                                        <option value="">주문번호</option>
-                                        <option value="">주문번호1</option>
-                                        <option value="">주문번호2</option>
-                                    </select>
-                                    <div class="input-T valign-t ml-5" style="width: 395px;">
-                                        <div class="input-in">
-                                            <input type="text" id="txtStep1DateOff1" placeholder="검색어를 입력하세요"/>
-                                        </div>
-                                        <!--
-                                        <div class="guide-wrap">
-                                            <div class="error">
-                                                잘못된 입력 값입니다.
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>날짜</th>
-                                <td>
-                                    <select id="" style="width:255px;">
-                                        <option value="">주문번호</option>
-                                        <option value="">주문번호1</option>
-                                        <option value="">주문번호2</option>
-                                    </select>
-                                    <div class="datePicker-W ml-5">
-                                        <div class="ui-datePicker" style="width:186px;">
-                                            <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
-                                        </div>
-                                        <span>~</span>
-                                        <div class="ui-datePicker" style="width:186px;">
-                                            <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
-                                        </div>
-                                    </div>
-                                    <ul class="radio-tab ml-15">
-                                        <li>
-                                            <input id="radio06_01" type="radio" name="radio06" value="">
-                                            <label for="radio06_01">오늘</label>
-                                        </li>
-                                        <li>
-                                            <input id="radio06_02" type="radio" name="radio06" value="">
-                                            <label for="radio06_02">3일간</label>
-                                        </li>
-                                        <li>
-                                            <input id="radio06_03" type="radio" name="radio06" value="">
-                                            <label for="radio06_03">1주일</label>
-                                        </li>
-                                        <li>
-                                            <input id="radio06_04" type="radio" name="radio06" value="">
-                                            <label for="radio06_04">1개월</label>
-                                        </li>
-                                        <li>
-                                            <input id="radio06_05" type="radio" name="radio06" value="">
-                                            <label for="radio06_05">3개월</label>
-                                        </li>
-                                        <li>
-                                            <input id="radio06_06" type="radio" name="radio06" value="">
-                                            <label for="radio06_06">6개월</label>
-                                        </li>
-                                        <li>
-                                            <input id="radio06_07" type="radio" name="radio06" value="">
-                                            <label for="radio06_07">1년</label>
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>카테고리</th>
-                                <td>
-                                    <select id="" style="width:200px;">
-                                        <option value="">1차 카테고리</option>
-                                        <option value="">1차 카테고리1</option>
-                                        <option value="">1차 카테고리2</option>
-                                    </select>
-                                    <select class="ml-5" id="" style="width:200px;">
-                                        <option value="">2차 카테고리</option>
-                                        <option value="">2차 카테고리1</option>
-                                        <option value="">2차 카테고리2</option>
-                                    </select>
-                                    <select class="ml-5" id="" style="width:200px;">
-                                        <option value="">3차 카테고리</option>
-                                        <option value="">3차 카테고리1</option>
-                                        <option value="">3차 카테고리2</option>
-                                    </select>
-                                    <select class="ml-5" id="" style="width:200px;">
-                                        <option value="">4차 카테고리</option>
-                                        <option value="">4차 카테고리1</option>
-                                        <option value="">4차 카테고리2</option>
-                                    </select>
-                                    <div class="inline-block ml-15">
-                                        <div class="input-C">
-                                            <input id="check_001" type="checkbox">
-                                            <label for="check_001">대표 카테고리</label>
-                                        </div>
-                                        <div class="input-C">
-                                            <input id="check_002" type="checkbox">
-                                            <label for="check_002">카테고리 미지정 상품</label>
-                                        </div>
-                                    </div>
-                                    
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-W type-search toggle-area">
-                    <table>
-                        <colgroup>
-                            <col style="width:100px">
-                            <col style="width:auto">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th>주문구분</th>
-                                <td>
-                                    <div class="input-R">
-                                        <input type="radio" id="radio00_01" name="radio00" value="">
-                                        <label for="radio00_01">정상주문</label>
-                                    </div>
-                                    <div class="input-R">
-                                        <input type="radio" id="radio00_02" name="radio00" value="">
-                                        <label for="radio00_02">클레임주문</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>주문상태</th>
-                                <td>
-                                    <div class="input-C">
-                                        <input id="check_01" type="checkbox">
-                                        <label for="check_01">입금대기</label>
-                                    </div>
-                                    <div class="input-C">
-                                        <input id="check_02" type="checkbox">
-                                        <label for="check_02">결제완료</label>
-                                    </div>
-                                    <div class="input-C">
-                                        <input id="check_03" type="checkbox">
-                                        <label for="check_03">상품준비중</label>
-                                    </div>
-                                    <div class="input-C">
-                                        <input id="check_04" type="checkbox">
-                                        <label for="check_04">배송중</label>
-                                    </div>
-                                    <div class="input-C">
-                                        <input id="check_05" type="checkbox">
-                                        <label for="check_05">배송완료</label>
-                                    </div>
-                                    <div class="input-C">
-                                        <input id="check_06" type="checkbox">
-                                        <label for="check_06">구매확정</label>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <hr class="mt-20"/>
-                <div class="bt-W mt-30">
-                    <button type="button" class="bt normal">초기화</button>
-                    <button type="button" class="bt normal green">검색</button>
-                </div>
-
-                <button type="button" class="bt toggle" data-target="toggle-area" data-on="true">상세검색 펼침</button>
-
-            </div>
-
-            <div class="section-W">
-
-                <ul class="textTab-list mb-15">
-                    <li class="active">
-                        <a href="">주문번호별</a>
-                    </li>
-                    <li>
-                        <a href="">주문상품별</a>
-                    </li>
-                </ul>
-
-                <div class="table-W type-normal">
-                    <div class="table-sort">
-                        <div class="left-side">
-                            <div class="sort-list">
-                                <strong>검색결과 <b>23</b>개</strong>
-                                <ul>
-                                    <li>전체  <b>23</b>개</li>
-                                    <li>품절  <b>21</b>개</li>
-                                    <li>노출  <b>2</b>개</li>
-                                    <li>검색 결과 내 총 결제금액  <b>12,345,678,123</b>원</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="right-side">
-                            <select id="" style="width:150px;">
-                                <option value="">주문번호</option>
-                                <option value="">주문번호1</option>
-                                <option value="">주문번호2</option>
-                            </select>
-                            <select id="" style="width:150px;">
-                                <option value="">노출개수</option>
-                                <option value="">10개씩</option>
-                                <option value="">20개씩</option>
-                            </select>
-                            <button type="button" class="bt middle">조회항목 설정</button>
-                        </div>
-                    </div>
-                    <div class="table-top">
-                        <div class="left-side">
-                            <button type="button" class="bt small">선택복사</button>
-                            <button type="button" class="bt small">상품 목록 항목</button>
-                        </div>
-                        <div class="right-side">
-                            <button type="button" class="bt small"><i class="ico excel"></i>엑셀다운로드</button>
-                        </div>
-                    </div>
-                    <table>
-                        <colgroup>
-                            <col style="width:3%">
-                            <col style="width:5%">
-                            <col style="width:9%">
-                            <col style="width:11%">
-                            <col style="width:12%">
-                            <col style="width:12%">
-                            <col style="width:7%">
-                            <col style="width:7%">
-                            <col style="width:7%">
-                            <col style="width:7%">
-                            <col style="width:7%">
-                            <col style="width:7%">
-                            <col style="width:7%">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>
-                                    <div class="input-C noTxt">
-                                        <input id="check_011" type="checkbox">
-                                        <label for="check_011"></label>
-                                    </div>
-                                </th>
-                                <th>번호</th>
-                                <th>주문일시</th>
-                                <th>주문번호</th>
-                                <th>주문자</th>
-                                <th>주문상품</th>
-                                <th>총 상품금액</th>
-                                <th>총 배송비</th>
-                                <th>총 주문금액</th>
-                                <th>결제방법</th>
-                                <th>주문상태</th>
-                                <th>관리자메모</th>
-                                <th>주문유형</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="input-C noTxt">
-                                        <input id="check_012" type="checkbox">
-                                        <label for="check_012"></label>
-                                    </div>
-                                </td>
-                                <td>99</td>
-                                <td>
-                                    2021-05-24<br/>
-                                    05:10
-                                </td>
-                                <td>
-                                    <span class="txtBlue">1605100612284924</span>
-                                </td>
-                                <td>
-                                    김수린<br/>
-                                    (NATURE**/일반회원)
-                                </td>
-                                <td>
-                                    진생 로얄 실크 월터리 크림 외 2건
-                                </td>
-                                <td>384,000원</td>
-                                <td>2,500원</td>
-                                <td>425,000원</td>
-                                <td>
-                                    <i class="icoTxt dark-orange">무</i>
-                                    <i class="icoTxt wine">포</i>
-                                    <i class="icoTxt light-green">첫</i>
-                                </td>
-                                <td>입금대기</td>
-                                <td><button type="button" class="bt small black">보기</button></td>
-                                <td>PC</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="table-bottom">
-                        <div class="left-side">
-                            <button type="button" class="bt small">선택복사</button>
-                            <button type="button" class="bt small">상품 목록 항목</button>
-                        </div>
-                        <div class="right-side">
-                            <button type="button" class="bt small">선택삭제</button>
-                            <button type="button" class="bt small"><i class="ico excel"></i>엑셀다운로드</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="paging-W mt-30">
-                    <button type="button" class="bt paging-before">제일앞으로 이동</button>
-                    <button type="button" class="bt paging-prev">이전 페이지로 이동</button>
-                    <ul class="paging-list">
-                        <li>
-                            <a href="#none">1</a>
-                        </li>
-                        <li>
-                            <strong title="현재 페이지">2</strong>
-                        </li>
-                        <li>
-                            <a href="#none">3</a>
-                        </li>
-                        <li>
-                            <a href="#none">4</a>
-                        </li>
-                        <li>
-                            <a href="#none">5</a>
-                        </li>
-                    </ul>
-                    <button type="button" class="bt paging-next">다음 페이지로 이동</button>
-                    <button type="button" class="bt paging-after">제일뒤로 이동</button>
-                </div>
-
-            </div>
-
-            <div class="section-W">
-
-
-                <div class="table-W type-normal">
-                    <div class="table-sort">
-                        <div class="left-side">
-                            <div class="sort-list">
-                                <strong>검색결과 <b>0</b>개</strong>
-                                <ul>
-                                    <li>전체  <b>0</b>개</li>
-                                    <li>품절  <b>0</b>개</li>
-                                    <li>노출  <b>0</b>개</li>
-                                    <li>검색 결과 내 총 결제금액  <b>0</b>원</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="right-side">
-                            <select id="" style="width:150px;">
-                                <option value="">주문번호</option>
-                                <option value="">주문번호1</option>
-                                <option value="">주문번호2</option>
-                            </select>
-                            <select id="" style="width:150px;">
-                                <option value="">노출개수</option>
-                                <option value="">10개씩</option>
-                                <option value="">20개씩</option>
-                            </select>
-                            <button type="button" class="bt middle">조회항목 설정</button>
-                        </div>
-                    </div>
-
-                    <table>
-                        <colgroup>
-                            <col style="width:3%">
-                            <col style="width:5%">
-                            <col style="width:9%">
-                            <col style="width:11%">
-                            <col style="width:12%">
-                            <col style="width:12%">
-                            <col style="width:7%">
-                            <col style="width:7%">
-                            <col style="width:7%">
-                            <col style="width:7%">
-                            <col style="width:7%">
-                            <col style="width:7%">
-                            <col style="width:7%">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>
-                                    <div class="input-C noTxt">
-                                        <input id="check_011" type="checkbox">
-                                        <label for="check_011"></label>
-                                    </div>
-                                </th>
-                                <th>번호</th>
-                                <th>주문일시</th>
-                                <th>주문번호</th>
-                                <th>주문자</th>
-                                <th>주문상품</th>
-                                <th>총 상품금액</th>
-                                <th>총 배송비</th>
-                                <th>총 주문금액</th>
-                                <th>결제방법</th>
-                                <th>주문상태</th>
-                                <th>관리자메모</th>
-                                <th>주문유형</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td colspan="13">
-                                    검색결과가 없습니다. 
-                                </td>
-                                
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="table-bottom">
-                        
-                        <div class="right-side">
-                            <button type="button" class="bt small">선택삭제</button>
-                            <button type="button" class="bt small"><i class="ico excel"></i>엑셀다운로드</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            
+        
             <!--후터-->
             <div class="footer"></div>
             <!--//후터-->

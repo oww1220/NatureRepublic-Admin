@@ -118,6 +118,11 @@
         width: 15px;
         height: 15px;
     }
+    &.minus {
+        @include Background($sprite: 'ico-minus', $size: auto, $position: center center);
+        width: 10px;
+        height: 10px;
+    }
 }
 .opened {
     .head01 {

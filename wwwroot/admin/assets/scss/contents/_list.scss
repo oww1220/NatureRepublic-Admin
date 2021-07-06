@@ -112,6 +112,21 @@
                 vertical-align: middle;
             }
         }
+        &.th-color-gray {
+            table {
+                th {
+                    background-color: #818286;
+                    color: #fff;
+                }
+                td {
+                    border-left: 1px solid #ddd;
+                    padding: 15px 5px;
+                    &:first-child {
+                        border-left: 0;
+                    }
+                }
+            }
+        }
     }
     &.toggle-area {
         display: none;
