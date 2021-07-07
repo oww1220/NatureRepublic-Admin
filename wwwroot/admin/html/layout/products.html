@@ -452,17 +452,17 @@
                                                         <th>자동 전시 기간</th>
                                                         <td>
                                                             <div class="datePicker-W">
-                                                                <div class="ui-datePicker" style="width:190px;">
+                                                                <div class="ui-datePicker" style="width:185px;">
                                                                     <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
                                                                 </div>
-                                                                <div class="ui-timePicker ml-5" style="width:190px;">
+                                                                <div class="ui-timePicker ml-5" style="width:185px;">
                                                                     <input type="text" name="time01"/>
                                                                 </div>
                                                                 <span>~</span>
-                                                                <div class="ui-datePicker" style="width:190px;">
+                                                                <div class="ui-datePicker" style="width:185px;">
                                                                     <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
                                                                 </div>
-                                                                <div class="ui-timePicker ml-5" style="width:190px;">
+                                                                <div class="ui-timePicker ml-5" style="width:185px;">
                                                                     <input type="text" name="time01"/>
                                                                 </div>
                                                             </div>
@@ -529,6 +529,316 @@
                     </div>
                 </div>
 
+
+                <div class="title-W between mt-50 mb-15">
+                    <h3 class="center"> 
+                        필수 옵션 설정
+                        <div class="bt-W ml-20">
+                            <button type="button" class="bt small">자주쓰는 옵션</button>
+                            <button type="button" class="bt small">옵션저장</button>
+                        </div>
+                    </h3>
+                </div>
+                <div class="box-W">
+                    <div class="table-W type-row">
+                        <table>
+                            <colgroup>
+                                <col style="width:200px">
+                                <col style="">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>상품구성</th>
+                                    <td>
+                                        <select id="selImproveCode2" style="width:185px;">
+                                            <option value="">개선 방안(선택)</option>
+                                            <option value="A">설계/검증</option>
+                                            <option value="B">협력사</option>
+                                            <option value="C">제조/서브</option>
+                                            <option value="D">서비스</option>
+                                        </select>
+                                        <button type="button" class="bt small ml-5">초기화</button>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>상품 전시 예약</th>
+                                    <td>
+                                        <div class="table-W type-normal th-color-gray">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:10%">
+                                                    <col style="width:40%">
+                                                    <col style="width:10%">
+                                                    <col style="width:30%">
+                                                    <col style="width:10%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>옵션명</th>
+                                                        <th>옵션값</th>
+                                                        <th>옵션가</th>
+                                                        <th>
+                                                            옵션이미지 
+                                                            <div class="input-C noTxt mr-10">
+                                                                <input id="check_001" type="checkbox">
+                                                                <label for="check_001"></label>
+                                                            </div>
+                                                            URL직접입력
+                                                        </th>
+                                                        <th>관리</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="input-T" style="width: 100%;">
+                                                                <div class="input-in">
+                                                                    <input type="text" id="" placeholder="용량">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="input-T" style="width: 100%;">
+                                                                <div class="input-in">
+                                                                    <input type="text" id="" placeholder="옵션값">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="input-T" style="width: 100%;">
+                                                                <div class="input-in">
+                                                                    <input type="text" id="" placeholder="옵션가">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="bt middle gray">찾아보기</button>
+                                                            <div class="input-T ml-5" style="width: 67%;">
+                                                                <div class="input-in">
+                                                                    <input type="text" id="" placeholder="url">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="bt small"><i class="ico plus"></i>추가</button>
+                                                        </td>
+                                                    </tr>
+                                                    
+                    
+                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bt-W mt-30 mb-20">
+                        <button type="button" class="bt normal">옵션 설정 저장</button>
+                    </div>
+                </div>
+
+
+                <div class="title-W between mb-15">
+                    <h3>
+                        브랜드
+                    </h3>
+                    <div class="bt-W">
+                        <button type="button" class="bt toggle txt on" data-target="toggle-area4" data-on="true"></button>
+                    </div>
+                </div>
+                <div class="box-W box-toggle toggle-area4 on">
+                    <div class="table-W type-normal th-color-gray">
+                        <table>
+                            <colgroup>
+                                <col style="width:4%">
+                                <col style="width:4%">
+                                <col style="width:4%">
+                                <col style="width:9%">
+                                <col style="width:9%">
+                                <col style="width:7%">
+                                <col style="width:7%">
+                                <col style="width:7%">
+                                <col style="width:8%">
+                                <col style="width:8%">
+                                <col style="width:8%">
+                                <col style="width:9%">
+                                <col style="width:16%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="input-C noTxt">
+                                            <input id="check_0000" type="checkbox">
+                                            <label for="check_0000"></label>
+                                        </div>
+                                    </th>
+                                    <th>번호</th>
+                                    <th>용량</th>
+                                    <th>옵션매입가</th>
+                                    <th>옵션가(원)</th>
+                                    <th>재고</th>
+                                    <th>안전재고</th>
+                                    <th>가용재고</th>
+                                    <th>옵션노출</th>
+                                    <th>품절처리</th>
+                                    <th>배송상태</th>
+                                    <th>자체옵션코드</th>
+                                    <th>메모</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="gray">
+                                    <td colspan="3">일괄적용</td>
+                                    <td>
+                                        <div class="input-T" style="width: 100%;">
+                                            <div class="input-in">
+                                                <input type="text" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-T" style="width: 100%;">
+                                            <div class="input-in">
+                                                <input type="text" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-T" style="width: 100%;">
+                                            <div class="input-in">
+                                                <input type="text" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-T" style="width: 100%;">
+                                            <div class="input-in">
+                                                <input type="text" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-T" style="width: 100%;">
+                                            <div class="input-in">
+                                                <input type="text" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <select id="selImproveCode2" style="width:100%;">
+                                            <option value="">선택</option>
+                                            <option value="">노출</option>
+                                            <option value="">비노출</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select id="selImproveCode2" style="width:100%;">
+                                            <option value="">선택</option>
+                                            <option value="">노출</option>
+                                            <option value="">비노출</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select id="selImproveCode2" style="width:100%;">
+                                            <option value="">선택</option>
+                                            <option value="">노출</option>
+                                            <option value="">비노출</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="bt middle black full">일괄적용</button>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="input-C noTxt">
+                                            <input id="check_0001" type="checkbox">
+                                            <label for="check_0001"></label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>15ml</td>
+                                    <td>
+                                        <div class="input-T" style="width: 100%;">
+                                            <div class="input-in">
+                                                <input type="text" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-T" style="width: 100%;">
+                                            <div class="input-in">
+                                                <input type="text" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-T" style="width: 100%;">
+                                            <div class="input-in">
+                                                <input type="text" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-T" style="width: 100%;">
+                                            <div class="input-in">
+                                                <input type="text" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-T" style="width: 100%;">
+                                            <div class="input-in">
+                                                <input type="text" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <select id="selImproveCode2" style="width:100%;">
+                                            <option value="">선택</option>
+                                            <option value="">노출</option>
+                                            <option value="">비노출</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select id="selImproveCode2" style="width:100%;">
+                                            <option value="">선택</option>
+                                            <option value="">노출</option>
+                                            <option value="">비노출</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select id="selImproveCode2" style="width:100%;">
+                                            <option value="">선택</option>
+                                            <option value="">노출</option>
+                                            <option value="">비노출</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="input-T" style="width: 100%;">
+                                            <div class="input-in">
+                                                <input type="text" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-T" style="width: 100%;">
+                                            <div class="input-in">
+                                                <input type="text" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
 
             </div>

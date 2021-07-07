@@ -63,7 +63,7 @@
         table {
             width: 100%;
             border-bottom: 1px solid #e7e7e7;
-            th {
+            > tbody > tr > th {
                 @include BreakWord;
                 color: #333;
                 padding: 20px 0 20px 23px;
@@ -75,7 +75,7 @@
                 border-top: 1px solid #e7e7e7;
                 font-size: 16px;
             }
-            td {
+            > tbody > tr > td {
                 @include BreakWord;
                 color: #333;
                 padding: 11px 23px;
@@ -117,12 +117,18 @@
                 th {
                     background-color: #818286;
                     color: #fff;
+                    height: 50px;
                 }
                 td {
                     border-left: 1px solid #ddd;
-                    padding: 15px 5px;
+                    padding: 8px;
                     &:first-child {
                         border-left: 0;
+                    }
+                }
+                .gray {
+                    td {
+                        background-color: #f9f9f9;
                     }
                 }
             }
