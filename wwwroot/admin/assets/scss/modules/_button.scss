@@ -128,6 +128,26 @@
         width: 10px;
         height: 10px;
     }
+    &.level-vip {
+        @include Background($sprite: 'ico_vip', $size: auto, $position: center center);
+        width: 30px;
+        height: 27px;
+    }
+    &.angry {
+        @include Background($sprite: 'ico_angry', $size: auto, $position: center center);
+        width: 20px;
+        height: 20px;
+    }
+    &.accordion-arrow {
+        @include Background($sprite: 'ico_accordion_arrow', $size: auto, $position: center center);
+        width: 10px;
+        height: 6px;
+    }
+    &.delete-white {
+        @include Background($sprite: 'ico_delete_white', $size: auto, $position: center center);
+        width: 14px;
+        height: 15px;
+    }
 }
 .opened {
     .head01 {
@@ -265,6 +285,11 @@
         &.black {
             border-color: #31291c;
             background-color: #31291c;
+            color: #fff;
+        }
+        &.red {
+            border-color: #f01d11;
+            background-color: #f01d11;
             color: #fff;
         }
     }

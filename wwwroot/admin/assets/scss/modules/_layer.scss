@@ -2,7 +2,8 @@ body.fixed {
     overflow: hidden;
     position: fixed;
 }
-.layer_dimmed {
+.layer_dimmed,
+.layer_dimmed_crm {
     position: fixed;
     left: 0;
     top: 0;
@@ -13,6 +14,9 @@ body.fixed {
     opacity: 0.7;
     z-index: 100;
     display: none;
+}
+.layer_dimmed_crm {
+    z-index: 102;
 }
 
 .pop_layer {
@@ -36,6 +40,9 @@ body.fixed {
         background-color: #f4f4f4;
         margin: 15px;
         position: relative;
+        &.pop_fit {
+            margin: 0;
+        }
     }
     .pop_scroll {
         @include CustumScroll;

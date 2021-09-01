@@ -185,6 +185,24 @@
         margin-top: 15px;
         overflow: hidden;
     }
+    .my-point-label {
+        color: #333333;
+        font-size: 18px;
+        font-weight: 500;
+        .point {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #6b8138;
+        }
+    }
+    .plus-point {
+        color: #117ef9;
+    }
+    .minus-point {
+        color: #f01d11;
+    }
 }
 
 .left-side {

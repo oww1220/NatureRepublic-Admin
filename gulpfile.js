@@ -170,7 +170,7 @@ gulp.task('sass', ()=>
             //indentWidth: 1,
         }).on('error', sass.logError)
     )
-    .pipe(cssnano())
+    // .pipe(cssnano())
     .pipe(
         autoprefixer({
             browsers: autoprefixBrowsers,

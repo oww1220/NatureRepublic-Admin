@@ -1,0 +1,182 @@
+.layer_crm {
+    $lnb-width: 280px;
+    $header-height: 100px;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    &::-webkit-scrollbar {
+        width: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    header {
+        height: $header-height;
+        padding: 30px 40px;
+        background-color: #3c3e26;
+        color: #ffffff;
+        line-height: 1;
+        .logo {
+            display: inline-block;
+            margin-right: 30px;
+            font-size: 32px;
+            font-weight: 800;
+            vertical-align: middle;
+        }
+        .level {
+            display: inline-block;
+            height: 43px;
+            width: 120px;
+            margin-right: 50px;
+            line-height: 45px;
+            text-align: center;
+            font-size: 22px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            vertical-align: middle;
+            .ico {
+                margin-top: -5px;
+                margin-right: 5px;
+            }
+        }
+        .user-info {
+            display: inline-block;
+            font-size: 18px;
+            margin-right: 30px;
+            .name,
+            .phone-number {
+                display: inline-block;
+                padding: 0 12px;
+            }
+            .name {
+                border-right: 1px solid #ffffff;
+            }
+        }
+        .bt {
+            &.mr10 {
+                margin-right: 10px;
+            }
+            &.secession {
+                position: absolute;
+                right: 40px;
+            }
+        }
+    }
+    .crm-container {
+        background-color: #e9eaed;
+        .lnb-wrap {
+            display: inline-block;
+            width: $lnb-width;
+            padding: 30px 20px 20px;
+            background-color: #ffffff;
+            .lnb-list {
+                > ul {
+                    border-top: 2px solid #333333;
+                    margin-bottom: 30px;
+                    li {
+                        a {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 100%;
+                            padding: 20px;
+                            border-bottom: 1px solid #e7e7e7;
+                            .title {
+                                flex: 1 1 auto;
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                            .value {
+                                margin-left: 20px;
+                                font-weight: 700;
+                                &.blue {
+                                    color: #117ef9;
+                                }
+                                &.red {
+                                    color: #f01d11;
+                                }
+                                &.green {
+                                    color: #6b8138;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .regist-consulting.bt {
+                width: 100%;
+                color: #333333;
+                border-color: #333333;
+            }
+            .black-list {
+                margin-top: 30px;
+
+                .title {
+                    a {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
+                ul {
+                    margin-top: 20px;
+                    li {
+                        background-color: #58595b;
+                        color: #ffffff;
+                        font-size: 14px;
+                        margin-bottom: 4px;
+                        .toggle {
+                            padding: 30px 20px;
+                            a {
+                                display: block;
+                                position: relative;
+                                .status,
+                                .id {
+                                    display: inline-block;
+                                }
+                                .status {
+                                    margin-right: 5px;
+                                    padding-right: 5px;
+                                    border-right: 1px solid #999999;
+                                }
+                                .ico.accordion-arrow {
+                                    position: absolute;
+                                    right: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    &.on {
+                                        transform: translateY(-50%) rotate(180deg);
+                                    }
+                                }
+                            }
+                        }
+                        .content {
+                            position: relative;
+                            padding: 0 20px 40px;
+                            .delete-memo {
+                                position: absolute;
+                                bottom: 20px;
+                                right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .crm-content {
+            display: inline-block;
+            position: absolute;
+            left: $lnb-width;
+            top: $header-height;
+            width: calc(100% - #{$lnb-width});
+            padding: 60px 80px 80px;
+        }
+    }
+}
