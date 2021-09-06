@@ -177,6 +177,25 @@
             top: $header-height;
             width: calc(100% - #{$lnb-width});
             padding: 60px 80px 80px;
+            .title-W {
+                .notice-important {
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+            .emphas {
+                color: #f01d11;
+            }
+            .copyright {
+                margin-top: 20px;
+                text-align: right;
+                font-size: 14px;
+                color: #818286;
+                .fc-primary {
+                    color: #89b03f;
+                    margin-right: 10px;
+                }
+            }
         }
     }
 }
